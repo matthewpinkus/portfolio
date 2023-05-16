@@ -1,12 +1,13 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import StickyAboutSection from './components/StickyAboutSection';
 
 function App() {
   return (
-    <div className="bg-blue-500">
-      test
-    </div>  
+    <div className='p-12 bg-primary_dark'>
+      <StickyAboutSection />
+    </div>
+    
   )
 }
 
