@@ -13,7 +13,17 @@ export default function GenericProjectSection({
       <p className="text-paragraph_dark mb-6">{description}</p>
       {technology.map((title) => {
         return (
-          <div className="bg-primary_dark inline-flex p-4 mr-4 mb-4 rounded-full text-subheading_dark">
+          <div
+            className="
+            bg-primary_dark 
+            text-subheading_dark 
+            inline-flex
+            p-4
+            mr-4
+            mb-4
+            font-bold
+            rounded-full"
+          >
             {title}
           </div>
         );
