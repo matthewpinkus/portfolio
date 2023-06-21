@@ -1,17 +1,14 @@
 /** @type {import('tailwindcss').Config} */
-module.exports = {
-  content: ["./src/**/*.{js,jsx,ts,tsx}"],
-  theme: {
-    colors: {
-      primary_dark: '#0D1B2A',
-      secondary_dark: '#415A77',
-      bg_dark: '#1C1D21',
-      paragraph_dark: '#E0E1DD',
-      heading_dark: '#7D5BA6',
-      subheading_dark: '#129490'
-    },
-    extend: {},
+export const content = ["./src/**/*.{js,jsx,ts,tsx}"];
+export const theme = {
+  colors: {
+    primary_dark: "#0D1B2A",
+    secondary_dark: "#415A77",
+    bg_dark: "#1C1D21",
+    paragraph_dark: "#E0E1DD",
+    heading_dark: "#7D5BA6",
+    subheading_dark: "#129490",
   },
-  plugins: [],
-}
-
+  extend: {},
+};
+export const plugins = [];
