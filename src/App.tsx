@@ -3,6 +3,7 @@ import "./App.css";
 import AboutTile from "./components/AboutTile";
 import StickyAboutSection from "./components/StickyAboutSection";
 import WorkExperienceTile from "./components/WorkExperienceTile";
+import ProjectTile from "./components/ProjectTile";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
         <div className="space-y-16">
           <AboutTile />
           <WorkExperienceTile />
+          <ProjectTile />
         </div>
       </div>
     </div>
