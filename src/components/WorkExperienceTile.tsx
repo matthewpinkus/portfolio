@@ -1,5 +1,7 @@
 import React from "react";
 import GenericWorkExperienceSection from "./GenericWorkExperienceSection";
+import { Link } from "react-router-dom";
+import ExperiencePage from "../pages/ExperiencePage";
 
 export default function WorkExperienceTile() {
   return (
@@ -13,13 +15,13 @@ export default function WorkExperienceTile() {
         description="Nobis ipsa eos commodi aut non qui. Voluptatem est beatae sed. Aliquam optio voluptatem sed ex. Sit voluptatum et non.
                     Commodi veritatis repudiandae sit harum tenetur sunt consectetur voluptatum. Fugiat maiores exercitationem enim labore 
                     inventore nulla at omnis. Sint sunt facere tempore. Quod ipsam suscipit fugiat quibusdam et commodi molestias eligendi."
-        link="/"
+        link="experience"
       />
       <GenericWorkExperienceSection
         title="Title"
         company="Company"
         description="Description"
-        link="/"
+        link="experience"
       />
     </div>
   );

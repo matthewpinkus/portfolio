@@ -1,5 +1,6 @@
 import React from "react";
 import { WorkExperienceProps } from "../interfaces/WorkExperienceProps";
+import { Link } from "react-router-dom";
 
 export default function GenericWorkExperienceSection({
   title,
@@ -14,9 +15,7 @@ export default function GenericWorkExperienceSection({
         {title}
       </h3>
       <p className="text-paragraph_dark mb-6">{description}</p>
-      <a className="text-heading_dark inline-flex cursor-pointer" href={link}>
-        Read More
-      </a>
+      <Link to={link} className="text-heading_dark inline-flex cursor-pointer">Read More</Link>
     </div>
   );
 }

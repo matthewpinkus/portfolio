@@ -1,5 +1,6 @@
 import React from "react";
 import { ProjectProps } from "../interfaces/ProjectProps";
+import { Link } from "react-router-dom";
 
 export default function GenericProjectSection({
   title,
@@ -28,9 +29,9 @@ export default function GenericProjectSection({
           </div>
         );
       })}
-      <a className="text-heading_dark flex cursor-pointer" href={link}>
+      <Link to={link} className="text-heading_dark flex cursor-pointer">
         Read More
-      </a>
+      </Link>
     </div>
   );
 }

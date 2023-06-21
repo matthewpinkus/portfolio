@@ -13,14 +13,14 @@ export default function ProjectTile() {
         description="Nobis ipsa eos commodi aut non qui. Voluptatem est beatae sed. Aliquam optio voluptatem sed ex. Sit voluptatum et non.
                     Commodi veritatis repudiandae sit harum tenetur sunt consectetur voluptatum. Fugiat maiores exercitationem enim labore 
                     inventore nulla at omnis. Sint sunt facere tempore. Quod ipsam suscipit fugiat quibusdam et commodi molestias eligendi."
-        link="/"
+        link="projects"
       />
 
       <GenericProjectSection
         title="Title"
         technology={["TypeScript", "JavaScript"]}
         description="Description"
-        link="/"
+        link="projects"
       />
     </div>
   );
