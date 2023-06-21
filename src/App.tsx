@@ -1,22 +1,15 @@
 import React from "react";
 import "./App.css";
-import AboutTile from "./components/AboutTile";
-import StickyAboutSection from "./components/StickyAboutSection";
-import WorkExperienceTile from "./components/WorkExperienceTile";
-import ProjectTile from "./components/ProjectTile";
+import { Routes, Route } from "react-router-dom";
+import HomePage from "./pages/HomePage";
 
 function App() {
   return (
-    <div className="p-12 bg-primary_dark scroll-smooth">
-      <div className="flex flex-col md:flex-row">
-        <StickyAboutSection />
-        <div className="space-y-16">
-          <AboutTile />
-          <WorkExperienceTile />
-          <ProjectTile />
-        </div>
-      </div>
-    </div>
+    <Routes>
+      <Route path="/" element={ <HomePage/> } />
+      <Route path="experience" element="" />
+      <Route path="projects" element="" />
+    </Routes>
   );
 }
 
