@@ -1,5 +1,5 @@
 import React from "react";
-import { ProjectProps } from "../interfaces/ProjectProps";
+import { TileProps } from "../interfaces/TileProps";
 import { Link } from "react-router-dom";
 
 export default function GenericProjectSection({
@@ -7,12 +7,12 @@ export default function GenericProjectSection({
   technology,
   description,
   link,
-}: ProjectProps) {
+}: TileProps) {
   return (
     <div>
       <h2 className="text-heading_dark text-5xl mb-2">{title}</h2>
       <p className="text-paragraph_dark mb-6">{description}</p>
-      {technology.map((title) => {
+      {technology?.map((title) => {
         return (
           <div
             className="
@@ -29,7 +29,9 @@ export default function GenericProjectSection({
           </div>
         );
       })}
-      <Link to={link} className="text-heading_dark flex cursor-pointer">
+      <Link 
+        to={link} 
+        className="text-heading_dark flex cursor-pointer transition-all duration-300 ease-in-out hover:font-bold">
         Read More
       </Link>
     </div>

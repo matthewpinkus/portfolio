@@ -1,7 +1,5 @@
 import React from "react";
 import GenericWorkExperienceSection from "./GenericWorkExperienceSection";
-import { Link } from "react-router-dom";
-import ExperiencePage from "../pages/ExperiencePage";
 
 export default function WorkExperienceTile() {
   return (

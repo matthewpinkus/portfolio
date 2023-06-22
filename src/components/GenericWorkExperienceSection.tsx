@@ -1,5 +1,5 @@
 import React from "react";
-import { WorkExperienceProps } from "../interfaces/WorkExperienceProps";
+import { TileProps } from "../interfaces/TileProps";
 import { Link } from "react-router-dom";
 
 export default function GenericWorkExperienceSection({
@@ -7,7 +7,7 @@ export default function GenericWorkExperienceSection({
   company,
   description,
   link,
-}: WorkExperienceProps) {
+}: TileProps) {
   return (
     <div>
       <h2 className="text-heading_dark text-5xl mb-2">{company}</h2>
