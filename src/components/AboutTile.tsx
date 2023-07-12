@@ -4,7 +4,7 @@ export default function AboutTile() {
   return (
     <div
       id="about-me"
-      className="bg-bg_dark md:w-9/12 h-auto w-full ml-auto p-12 "
+      className="bg-bg_dark md:w-5/6 h-auto w-full ml-auto p-12 "
     >
       <h2 className="mb-6 text-5xl text-heading_dark">About Me</h2>
       <p className="text-paragraph_dark">

@@ -5,7 +5,7 @@ import anchor from "../assets/anchor-line.svg";
 export default function StickyAboutSection() {
   return (
     <div className="h-full flex md:sticky md:top-0 mb-12">
-      <div className="bg-green-300 w-auto p-6">
+      <div className="w-96 p-6">
         <div className="w-56 mb-12 bg-secondary_dark rounded-full">
           <img src={logo} className="mx-auto" />
         </div>

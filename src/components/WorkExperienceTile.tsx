@@ -5,7 +5,7 @@ export default function WorkExperienceTile() {
   return (
     <div
       id="experience"
-      className="bg-bg_dark md:w-9/12 h-auto w-full ml-auto p-12 text-paragraph_dark space-y-16"
+      className="bg-bg_dark md:w-5/6 h-auto w-full ml-auto p-12 text-paragraph_dark space-y-16"
     >
       <GenericWorkExperienceSection
         title="Web Developer & IT Consultant"

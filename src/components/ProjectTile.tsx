@@ -5,7 +5,7 @@ export default function ProjectTile() {
   return (
     <div
       id="projects"
-      className="bg-bg_dark md:w-9/12 h-auto w-full ml-auto p-12 text-paragraph_dark space-y-16"
+      className="bg-bg_dark md:w-5/6 h-auto w-full ml-auto p-12 text-paragraph_dark space-y-16"
     >
       <GenericProjectSection
         title="Title"
