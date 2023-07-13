@@ -7,9 +7,28 @@ body {
   margin: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #0d1b2a;
 }
 
 pre,
 code {
   font-family: Hack, monospace;
+}
+
+@layer components {
+  .nav-link {
+    @apply w-full;
+  }
+
+  .nav-link-content {
+    @apply grid-cols-2;
+  }
+
+  .nav-icon {
+    @apply w-12 h-12;
+  }
+
+  .nav-link-divider {
+    @apply ml-11 mr-4 border-b-[.5px] border-paragraph_dark border-opacity-30;
+  }
 }

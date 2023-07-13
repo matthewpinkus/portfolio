@@ -9,7 +9,7 @@ export default function GenericWorkExperienceSection({
   link,
 }: TileProps) {
   return (
-    <div>
+    <div className="">
       <h2 className="text-heading_dark text-5xl mb-2">{company}</h2>
       <h3 className="text-subheading_dark text-3xl mb-4 font-bold italic">
         {title}
