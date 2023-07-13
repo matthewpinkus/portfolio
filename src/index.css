@@ -31,4 +31,16 @@ code {
   .nav-link-divider {
     @apply ml-11 mr-4 border-b-[.5px] border-paragraph_dark border-opacity-30;
   }
+
+  .divider {
+    @apply border-b-[.5px] border-paragraph_dark border-opacity-30;
+  }
+
+  .nav-line-top {
+    @apply w-6 border-b-[.5px] border-paragraph_dark border-opacity-80;
+  }
+
+  .nav-line-bottom {
+    @apply w-6 border-b-[.5px] border-paragraph_dark border-opacity-80;
+  }
 }

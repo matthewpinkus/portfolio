@@ -4,38 +4,53 @@ import { Link } from "react-router-dom";
 
 export default function StickyAboutSection() {
   return (
-    <div className="bg-bg_dark md:h-full md:fixed md:top-0 md:left-0 md:shadow-[5px_0px_20px_0px_rgba(0,0,0,0.2)] sticky top-0 left-0">
-      <div className="w-96 p-12 justify-between">
+    <div className="md:bg-bg_dark border-b-[.5px] border-paragraph_dark border-opacity-30 p-6 sticky top-0 left-0 flex justify-between md:p-0 md:flex-col md:h-full md:fixed md:top-0 md:left-0 md:shadow-[5px_0px_20px_0px_rgba(0,0,0,0.2)]">
+      <div className="md:w-96 md:p-12">
         {/* Info wrapper */}
-        <div>
+        <div className="md:p-6">
           {/* Icon wrapper */}
-          <div className="w-28 mb-6 bg-secondary_dark rounded-full mx-auto">
+          <div className="w-14 md:w-28 md:mb-6 md:p-2 bg-secondary_dark rounded-full md:mx-auto">
             <img src={logo} className="mx-auto" />
           </div>
-          <h1 className="text-heading_dark font-bold text-xl text-center">
+          <h1 className="md:block text-heading_dark font-bold text-xl text-center">
             Matthew Pinkus
           </h1>
-          <h2 className="text-subheading_dark font-italic text-xl text-center">
+          <h2 className="hidden md:block text-subheading_dark font-italic text-xl text-center">
             Software Engineer
           </h2>
         </div>
 
         {/* Link wrapper */}
-        <div className="mt-12 relative flex flex-col">
+        <div className="md:flex md:flex-col hidden mt-12 relative ">
           {/* Hover effect div */}
           <div className="bg-[#232323] h-11 border border-[white] border-opacity-80 rounded-md shadow-sm absolute top-0 left-0 right-0 bottom-auto" />
           <Link
             to="/"
-            className="w-full h-11 z-[1] active:text-[#ffffff] text-[#ffffff55]"
+            className="w-full h-11 z-[1] active:text-[#ffffff] text-[#ffffff55] hover:text-[white] transform"
           >
             <div className="flex items-center">
               <div className="w-12 h-12 p-2">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="#ffffff"
-                  viewBox="0 0 256 256"
-                >
-                  <path d="M122.5,124.88a4,4,0,0,1,0,6.24l-40,32a4,4,0,0,1-5-6.24L113.6,128,77.5,99.12a4,4,0,0,1,5-6.24ZM176,156H136a4,4,0,0,0,0,8h40a4,4,0,0,0,0-8ZM228,56V200a12,12,0,0,1-12,12H40a12,12,0,0,1-12-12V56A12,12,0,0,1,40,44H216A12,12,0,0,1,228,56Zm-8,0a4,4,0,0,0-4-4H40a4,4,0,0,0-4,4V200a4,4,0,0,0,4,4H216a4,4,0,0,0,4-4Z"></path>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256">
+                  <rect width="256" height="256" fill="none" />
+                  <polyline
+                    points="40 64 112 128 40 192"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="8"
+                  />
+                  <line
+                    x1="120"
+                    y1="192"
+                    x2="216"
+                    y2="192"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="8"
+                  />
                 </svg>
               </div>
               <div className="align-middle w-full ml-2">Home</div>
@@ -49,12 +64,24 @@ export default function StickyAboutSection() {
           >
             <div className="flex items-center ">
               <div className="w-12 h-12 p-2">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="#ffffff"
-                  viewBox="0 0 256 256"
-                >
-                  <path d="M122.5,124.88a4,4,0,0,1,0,6.24l-40,32a4,4,0,0,1-5-6.24L113.6,128,77.5,99.12a4,4,0,0,1,5-6.24ZM176,156H136a4,4,0,0,0,0,8h40a4,4,0,0,0,0-8ZM228,56V200a12,12,0,0,1-12,12H40a12,12,0,0,1-12-12V56A12,12,0,0,1,40,44H216A12,12,0,0,1,228,56Zm-8,0a4,4,0,0,0-4-4H40a4,4,0,0,0-4,4V200a4,4,0,0,0,4,4H216a4,4,0,0,0,4-4Z"></path>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256">
+                  <rect width="256" height="256" fill="none" />
+                  <path
+                    d="M80,40c-64,0,0,88-64,88,64,0,0,88,64,88"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="8"
+                  />
+                  <path
+                    d="M176,40c64,0,0,88,64,88-64,0,0,88-64,88"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="8"
+                  />
                 </svg>
               </div>
               <div className="text-paragraph_dark align-middle w-full ml-2">
@@ -64,6 +91,14 @@ export default function StickyAboutSection() {
           </Link>
           <div className="nav-link-divider" />
         </div>
+      </div>
+      {/* Bottom wrapper for social icons? */}
+      <div className="hidden md:flex p-12 border-t-[0.5px] border-paragraph_dark border-opacity-30"></div>
+
+      {/* //TODO: Side nav drawer on click */}
+      <div className="md:hidden bg-bg_dark flex flex-col justify-between h-12 w-12 items-center my-auto p-4 py-5 border rounded-lg">
+        <div className="nav-line-top" />
+        <div className="nav-line-bottom" />
       </div>
     </div>
   );
