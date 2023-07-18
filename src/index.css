@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 body {
-  font-family: Hack, monospace;
+  font-family: Inter, sans-serif;
   margin: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -12,7 +12,7 @@ body {
 
 pre,
 code {
-  font-family: Hack, monospace;
+  font-family: Inter, sans-serif;
 }
 
 @layer components {
@@ -25,7 +25,7 @@ code {
   }
 
   .nav-icon {
-    @apply w-12 h-12;
+    @apply w-12 h-12 p-2 text-[#ffffff55];
   }
 
   .nav-link-divider {
@@ -42,5 +42,19 @@ code {
 
   .nav-line-bottom {
     @apply w-6 border-b-[.5px] border-paragraph_dark border-opacity-80;
+  }
+
+  .heading_title {
+  }
+
+  .heading_sub {
+  }
+  .text_paragraph {
+  }
+  .text_word {
+  }
+
+  .section {
+    @apply p-6;
   }
 }
