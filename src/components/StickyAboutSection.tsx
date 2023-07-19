@@ -29,11 +29,16 @@ export default function StickyAboutSection() {
         </div>
 
         {/* Link wrapper */}
-        <div className="md:flex md:flex-col hidden mt-12 relative text-paragraph_dark_low">
-          {/* Hover effect div */}
-          <div className="bg-[#232323] h-11 border border-[white] border-opacity-80 rounded-md shadow-sm absolute top-0 left-0 right-0 bottom-auto" />
-
+        <div
+          id="nav-link-wrapper"
+          className="md:flex md:flex-col hidden mt-12 relative text-paragraph_dark_low"
+        >
+          <div
+            id="hover-wrapper"
+            className="bg-[#232323] h-11 border border-[white] border-opacity-80 rounded-md shadow-sm absolute top-0 left-0 right-0 bottom-auto"
+          />
           <Link
+            id="nav-link-1"
             to="/"
             className={`nav-link ${
               useLocation().pathname === "/"
@@ -46,6 +51,7 @@ export default function StickyAboutSection() {
           <div className="nav-link-divider" />
 
           <Link
+            id="nav-link-2"
             to="/experience"
             className={`nav-link ${
               useLocation().pathname === "/experience"
@@ -58,6 +64,7 @@ export default function StickyAboutSection() {
           <div className="nav-link-divider" />
 
           <Link
+            id="nav-link-3"
             to="/projects"
             className={`nav-link ${
               useLocation().pathname === "/projects"
@@ -70,6 +77,7 @@ export default function StickyAboutSection() {
           <div className="nav-link-divider" />
 
           <Link
+            id="nav-link-4"
             to="/about"
             className={`nav-link ${
               useLocation().pathname === "/about"
@@ -83,6 +91,7 @@ export default function StickyAboutSection() {
           <div className="nav-link-divider" />
 
           <Link
+            id="nav-link-5"
             to="/contact"
             className={`nav-link ${
               useLocation().pathname === "/contact"

@@ -11,6 +11,10 @@ export const theme = {
     subheading_dark: "#129490",
     link_dark: ""
   },
-  extend: {},
+  extend: {
+    animation: {
+      'spin-slow': 'spin 3s linear infinite',
+    }
+  },
 };
 export const plugins = [];

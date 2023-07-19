@@ -17,7 +17,7 @@ code {
 
 @layer components {
   .nav-link {
-    @apply w-full h-11 z-[1] hover:text-[#ffffff];
+    @apply w-full h-11 z-[1]  transition-colors duration-200 hover:text-[#ffffff];
   }
 
   .nav-link-content {
