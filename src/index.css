@@ -17,7 +17,7 @@ code {
 
 @layer components {
   .nav-link {
-    @apply w-full h-11 z-[1];
+    @apply w-full h-11 z-[1] hover:text-[#ffffff];
   }
 
   .nav-link-content {
@@ -25,7 +25,7 @@ code {
   }
 
   .nav-icon {
-    @apply w-12 h-12 p-2 text-[#ffffff55];
+    @apply w-12 h-12 p-2;
   }
 
   .nav-link-divider {

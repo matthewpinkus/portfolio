@@ -1,6 +1,6 @@
 import React from "react";
 import logo from "../assets/matthew-icon.png";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { ReactComponent as Brackets_SVG } from "../assets/brackets.svg";
 import { ReactComponent as Terminal_SVG } from "../assets/terminal.svg";
 import { ReactComponent as Address_SVG } from "../assets/address-book.svg";
@@ -29,32 +29,67 @@ export default function StickyAboutSection() {
         </div>
 
         {/* Link wrapper */}
-        <div className="md:flex md:flex-col hidden mt-12 relative text-[#ffffff55]">
+        <div className="md:flex md:flex-col hidden mt-12 relative text-paragraph_dark_low">
           {/* Hover effect div */}
           <div className="bg-[#232323] h-11 border border-[white] border-opacity-80 rounded-md shadow-sm absolute top-0 left-0 right-0 bottom-auto" />
 
-          <Link to="/" className="nav-link">
+          <Link
+            to="/"
+            className={`nav-link ${
+              useLocation().pathname === "/"
+                ? "text-[#ffffff]"
+                : "text-paragraph_dark_low"
+            }`}
+          >
             <NavItem title="Home" SVG={Terminal_SVG} />
           </Link>
           <div className="nav-link-divider" />
 
-          <Link to="/experience" className="nav-link">
+          <Link
+            to="/experience"
+            className={`nav-link ${
+              useLocation().pathname === "/experience"
+                ? "text-[#ffffff]"
+                : "text-paragraph_dark_low"
+            }`}
+          >
             <NavItem title="Experience" SVG={Brackets_SVG} />
           </Link>
           <div className="nav-link-divider" />
 
-          <Link to="/" className="nav-link">
+          <Link
+            to="/projects"
+            className={`nav-link ${
+              useLocation().pathname === "/projects"
+                ? "text-[#ffffff]"
+                : "text-paragraph_dark_low"
+            }`}
+          >
             <NavItem title="Projects" SVG={Laptop_SVG} />
           </Link>
           <div className="nav-link-divider" />
 
-          <Link to="/" className="nav-link">
+          <Link
+            to="/about"
+            className={`nav-link ${
+              useLocation().pathname === "/about"
+                ? "text-[#ffffff]"
+                : "text-paragraph_dark_low"
+            }`}
+          >
             <NavItem title="About" SVG={User_SVG} />
           </Link>
 
           <div className="nav-link-divider" />
 
-          <Link to="/" className="nav-link">
+          <Link
+            to="/contact"
+            className={`nav-link ${
+              useLocation().pathname === "/contact"
+                ? "text-[#ffffff]"
+                : "text-paragraph_dark_low"
+            }`}
+          >
             <NavItem title="Contact" SVG={Address_SVG} />
           </Link>
           <div className="nav-link-divider" />
