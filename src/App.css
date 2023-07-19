@@ -23,6 +23,23 @@
   font-size: calc(10px + 2vmin);
   color: white;
 }
-#nav-link-wrapper a:hover + #hover-wrapper {
-  transform: translateY(100px);
+
+#nav-link-2:hover #hover-wrapper {
+  transform: translateY(0%);
+}
+
+#nav-link-2:hover #hover-wrapper {
+  transform: translateY(100%);
+}
+
+#nav-link-3:hover ~ #hover-wrapper {
+  transform: translateY(200%);
+}
+
+#nav-link-4:hover ~ #hover-wrapper {
+  transform: translateY(300%);
+}
+
+#nav-link-5:hover ~ #hover-wrapper {
+  transform: translateY(400%);
 }

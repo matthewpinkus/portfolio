@@ -35,8 +35,9 @@ export default function StickyAboutSection() {
         >
           <div
             id="hover-wrapper"
-            className="bg-[#232323] h-11 border border-[white] border-opacity-80 rounded-md shadow-sm absolute top-0 left-0 right-0 bottom-auto"
+            className="bg-[#232323] transition ease-in-out h-11 border border-[white] border-opacity-80 rounded-md shadow-sm absolute top-0.5 left-0 right-0 "
           />
+
           <Link
             id="nav-link-1"
             to="/"
@@ -47,6 +48,10 @@ export default function StickyAboutSection() {
             }`}
           >
             <NavItem title="Home" SVG={Terminal_SVG} />
+            <div
+              id="active-wrapper"
+              className="bg-[#232323] transition ease-in-out h-11 border border-[white] border-opacity-80 rounded-md shadow-sm absolute top-0.5 left-0 right-0 "
+            />
           </Link>
           <div className="nav-link-divider" />
 
