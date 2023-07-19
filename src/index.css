@@ -17,7 +17,7 @@ code {
 
 @layer components {
   .nav-link {
-    @apply w-full;
+    @apply w-full h-11 z-[1];
   }
 
   .nav-link-content {

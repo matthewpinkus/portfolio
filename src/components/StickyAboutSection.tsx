@@ -6,6 +6,7 @@ import { ReactComponent as Terminal_SVG } from "../assets/terminal.svg";
 import { ReactComponent as Address_SVG } from "../assets/address-book.svg";
 import { ReactComponent as Laptop_SVG } from "../assets/laptop.svg";
 import { ReactComponent as User_SVG } from "../assets/user-focus.svg";
+import NavItem from "./NavItem";
 
 export default function StickyAboutSection() {
   return (
@@ -32,60 +33,29 @@ export default function StickyAboutSection() {
           {/* Hover effect div */}
           <div className="bg-[#232323] h-11 border border-[white] border-opacity-80 rounded-md shadow-sm absolute top-0 left-0 right-0 bottom-auto" />
 
-          <Link to="/" className="w-full h-11 z-[1]">
-            <div className="flex items-center">
-              <div className="nav-icon">
-                <Terminal_SVG />
-              </div>
-              <div className="align-middle w-full ml-2">Home</div>
-            </div>
+          <Link to="/" className="nav-link">
+            <NavItem title="Home" SVG={Terminal_SVG} />
           </Link>
           <div className="nav-link-divider" />
 
-          <Link to="/experience" className="w-full h-11 z-[1]">
-            <div className="flex items-center ">
-              <div className="nav-icon">
-                <Brackets_SVG />
-              </div>
-              <div className="text-paragraph_dark align-middle w-full ml-2">
-                Experience
-              </div>
-            </div>
+          <Link to="/experience" className="nav-link">
+            <NavItem title="Experience" SVG={Brackets_SVG} />
           </Link>
           <div className="nav-link-divider" />
 
-          <Link to="/" className="w-full h-11 z-[1]">
-            <div className="flex items-center ">
-              <div className="nav-icon">
-                <Laptop_SVG />
-              </div>
-              <div className="text-paragraph_dark align-middle w-full ml-2">
-                Projects
-              </div>
-            </div>
+          <Link to="/" className="nav-link">
+            <NavItem title="Projects" SVG={Laptop_SVG} />
           </Link>
           <div className="nav-link-divider" />
 
-          <Link to="/" className="w-full h-11 z-[1]">
-            <div className="flex items-center ">
-              <div className="nav-icon">
-                <User_SVG />
-              </div>
-              <div className="text-paragraph_dark align-middle w-full ml-2">
-                About
-              </div>
-            </div>
+          <Link to="/" className="nav-link">
+            <NavItem title="About" SVG={User_SVG} />
           </Link>
+
           <div className="nav-link-divider" />
-          <Link to="/" className="w-full h-11 z-[1]">
-            <div className="flex items-center ">
-              <div className="nav-icon">
-                <Address_SVG />
-              </div>
-              <div className="text-paragraph_dark align-middle w-full ml-2">
-                Contact
-              </div>
-            </div>
+
+          <Link to="/" className="nav-link">
+            <NavItem title="Contact" SVG={Address_SVG} />
           </Link>
           <div className="nav-link-divider" />
         </div>
