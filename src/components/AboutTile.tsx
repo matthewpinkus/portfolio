@@ -2,22 +2,32 @@ import React from "react";
 
 export default function AboutTile() {
   return (
-    <div
-      id="about-me"
-      className="bg-bg_dark md:w-5/6 h-auto w-full ml-auto p-12 "
-    >
-      <h2 className="mb-6 text-5xl text-heading_dark">About Me</h2>
-      <p className="text-paragraph_dark">
-        I am a recently graduated Computer Scientist with a major in Systems
-        Administration looking for full-time work. I have achieved excellent
-        results during my time at university, currently having a 5.1 GPA.
-        <br></br>
-        <br></br>
-        The knowledge and skillset I have attained while studying at university,
-        working on passion projects and a combined 9 years in the workforce has
-        taught me how to conduct myself in professional team environments as
-        well as work autonomously with little supervision while achieving high
-        results.
+    <div className="p-8 ">
+      <h1 className="text-5xl font-bold mb-4">Web Developer</h1>
+      <p className="mb-2 text-paragraph_dark_low">
+        I built my first computer at age 5, albeit with my father as an
+        overseer.
+      </p>
+      <p className="mb-2 text-paragraph_dark_low">
+        Ever since, I have been encouraged to pursue my passion for technology
+        and have traveled well down the many rabbit holes of Computer Science.
+        My pursuit eventually landed me at Western Sydney University to study
+        Computer Science, where I graduated my bachelors in September '22.
+      </p>
+      <p className="mb-2 text-paragraph_dark_low">
+        Among taking on many spontaneous projects to find my field of expertise,
+        including a
+        <a className="text-subheading_dark"> TypeScript Discord bot</a>, a
+        <a className="text-subheading_dark"> Seinfield themed door-opener </a>
+        to annoy my housemates (built on an Arduino) and a headless Debian
+        <a className="text-subheading_dark"> NAS-like Raspberry Pi server</a>, I
+        have taken up the mantle of Web Developer.
+      </p>
+      <p className="text-paragraph_dark_low">
+        Professionally, I build and maintain websites for our clients at
+        <a className="text-subheading_dark"> Masters Agency</a>. In my free time
+        I like to play couch co-op games with my girlfriend, annoy our cat and
+        read epic fantasy series.
       </p>
     </div>
   );
