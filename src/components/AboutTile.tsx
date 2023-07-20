@@ -4,16 +4,17 @@ export default function AboutTile() {
   return (
     <div className="p-4 text-paragraph_dark_low">
       <p className="mb-2">
-        In the year 2000, I built my first computer at age 5 (albeit with my
-        father as an overseer).
+        Back in '99', I built my first computer at age 4 (with my father acting
+        as overseer).
       </p>
 
       <p className="mb-2">
         Ever since, I have been encouraged to pursue my passion for technology
-        and have traveled well down the many rabbit holes of Computer Science.
-        My pursuit eventually landed me at Western Sydney University to study
+        which has led me well down the many rabbit holes of Computer Science. My
+        pursuit eventually landed me at Western Sydney University to study
         Computer Science, where I graduated my bachelors in September '22.
       </p>
+
       <p className="mb-2">
         Among taking on many spontaneous projects to find my field of expertise,
         including a
