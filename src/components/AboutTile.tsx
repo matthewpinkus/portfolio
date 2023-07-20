@@ -19,20 +19,23 @@ export default function AboutTile() {
         including a
         <a
           href="https://github.com/kaildrai/discord-bot"
-          className="text-subheading_dark font-bold"
+          className="text-paragraph_dark hover:text-subheading_dark font-bold"
         >
           {" "}
           TypeScript Discord bot
         </a>
         , a
-        <a href="" className="text-subheading_dark font-bold">
+        <a
+          href=""
+          className="text-paragraph_dark hover:text-subheading_dark font-bold"
+        >
           {" "}
           Seinfield themed door-opener{" "}
         </a>
         to annoy my housemates (built on an Arduino) and a headless Debian
         <a
           href="www.mastersagency.au"
-          className="text-subheading_dark font-bold"
+          className="text-paragraph_dark hover:text-subheading_dark font-bold"
         >
           {" "}
           NAS-like Raspberry Pi server
@@ -43,7 +46,7 @@ export default function AboutTile() {
         Professionally, I build and maintain websites for our clients at
         <a
           href="www.mastersagency.au"
-          className="text-subheading_dark font-bold"
+          className="text-paragraph_dark hover:text-subheading_dark font-bold"
         >
           {" "}
           Masters Agency
