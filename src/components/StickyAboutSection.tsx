@@ -10,7 +10,7 @@ import NavItem from "./NavItem";
 
 export default function StickyAboutSection() {
   return (
-    <div className="md:bg-bg_dark border-b-[.5px] border-paragraph_dark border-opacity-30 p-6 sticky top-0 left-0 flex justify-between md:p-0 md:flex-col md:h-full md:fixed md:top-0 md:left-0 md:shadow-[5px_0px_20px_0px_rgba(0,0,0,0.2)]">
+    <div className="bg-bg_dark border-b-[.5px] border-paragraph_dark border-opacity-30 p-6 sticky top-0 left-0 flex justify-between md:p-0 md:flex-col md:h-full md:fixed md:top-0 md:left-0 md:shadow-[5px_0px_20px_0px_rgba(0,0,0,0.2)]">
       <div className="md:w-96 md:p-12">
         {/* Info wrapper */}
         <div className="flex md:p-6 md:flex-col">
@@ -33,10 +33,10 @@ export default function StickyAboutSection() {
           id="nav-link-wrapper"
           className="md:flex md:flex-col hidden mt-12 relative text-paragraph_dark_low"
         >
-          <div
+          {/* <div
             id="hover-wrapper"
             className="bg-[#232323] h-11 border border-[white] border-opacity-80 rounded-md shadow-sm absolute top-0 left-0 right-0 bottom-auto"
-          />
+          /> */}
           <Link
             id="nav-link-1"
             to="/"
@@ -108,7 +108,7 @@ export default function StickyAboutSection() {
       <div className="hidden md:flex p-12 border-t-[0.5px] border-paragraph_dark border-opacity-30"></div>
 
       {/* //TODO: Side nav drawer on click */}
-      <div className="md:hidden bg-bg_dark flex flex-col justify-between h-12 w-12 items-center my-auto p-4 py-5 border rounded-lg">
+      <div className="md:hidden cursor-pointer bg-primary_dark flex flex-col justify-between h-12 w-12 items-center my-auto p-4 py-5 border rounded-lg">
         <div className="nav-line-top" />
         <div className="nav-line-bottom" />
       </div>

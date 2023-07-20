@@ -33,7 +33,7 @@ code {
   }
 
   .divider {
-    @apply border-b-[.5px] border-paragraph_dark border-opacity-30;
+    @apply border-b-[.5px] border-paragraph_dark border-opacity-10;
   }
 
   .nav-line-top {
