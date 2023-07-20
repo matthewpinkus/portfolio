@@ -7,6 +7,7 @@ export default function AboutTile() {
         In the year 2000, I built my first computer at age 5 (albeit with my
         father as an overseer).
       </p>
+
       <p className="mb-2">
         Ever since, I have been encouraged to pursue my passion for technology
         and have traveled well down the many rabbit holes of Computer Science.
