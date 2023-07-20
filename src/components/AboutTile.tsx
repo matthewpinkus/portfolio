@@ -27,7 +27,7 @@ export default function AboutTile() {
         </a>
         , a
         <a
-          href=""
+          href="/"
           className="text-paragraph_dark hover:text-subheading_dark font-bold"
         >
           {" "}
