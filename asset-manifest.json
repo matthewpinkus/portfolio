@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/react-website/static/css/main.895b40aa.css",
+    "main.js": "/react-website/static/js/main.33df72bb.js",
+    "static/js/787.71e672d5.chunk.js": "/react-website/static/js/787.71e672d5.chunk.js",
+    "static/media/matthew-icon.png": "/react-website/static/media/matthew-icon.3d7668cea3e2877375d3.png",
+    "static/media/address-book.svg": "/react-website/static/media/address-book.f5efd1901e929b02dce9afff722b5578.svg",
+    "static/media/user-focus.svg": "/react-website/static/media/user-focus.1bf7b6ba62e079cfe0ed9a4eec6e4340.svg",
+    "index.html": "/react-website/index.html",
+    "static/media/terminal.svg": "/react-website/static/media/terminal.5760e76189868e073fc93a943b7fb223.svg",
+    "static/media/brackets.svg": "/react-website/static/media/brackets.d34e8efff62a50e954117c973767a0d3.svg",
+    "static/media/laptop.svg": "/react-website/static/media/laptop.78075c7ddd17dd88d57c6684cc3ecf44.svg",
+    "main.895b40aa.css.map": "/react-website/static/css/main.895b40aa.css.map",
+    "main.33df72bb.js.map": "/react-website/static/js/main.33df72bb.js.map",
+    "787.71e672d5.chunk.js.map": "/react-website/static/js/787.71e672d5.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.895b40aa.css",
+    "static/js/main.33df72bb.js"
+  ]
+}
