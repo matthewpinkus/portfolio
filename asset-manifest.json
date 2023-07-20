@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/react-website/static/css/main.4cc9bbcd.css",
-    "main.js": "/react-website/static/js/main.c1fca181.js",
+    "main.js": "/react-website/static/js/main.af173a9e.js",
     "static/js/787.71e672d5.chunk.js": "/react-website/static/js/787.71e672d5.chunk.js",
     "static/media/matthew-icon.png": "/react-website/static/media/matthew-icon.3d7668cea3e2877375d3.png",
     "static/media/address-book.svg": "/react-website/static/media/address-book.f5efd1901e929b02dce9afff722b5578.svg",
@@ -11,11 +11,11 @@
     "static/media/brackets.svg": "/react-website/static/media/brackets.d34e8efff62a50e954117c973767a0d3.svg",
     "static/media/laptop.svg": "/react-website/static/media/laptop.78075c7ddd17dd88d57c6684cc3ecf44.svg",
     "main.4cc9bbcd.css.map": "/react-website/static/css/main.4cc9bbcd.css.map",
-    "main.c1fca181.js.map": "/react-website/static/js/main.c1fca181.js.map",
+    "main.af173a9e.js.map": "/react-website/static/js/main.af173a9e.js.map",
     "787.71e672d5.chunk.js.map": "/react-website/static/js/787.71e672d5.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.4cc9bbcd.css",
-    "static/js/main.c1fca181.js"
+    "static/js/main.af173a9e.js"
   ]
 }
