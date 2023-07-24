@@ -1,5 +1,5 @@
 import React from "react";
-import { NavProps } from "../interfaces/NavProps";
+import NavProps from "@interfaces/NavProps";
 
 export default function NavItem({ title, SVG }: NavProps) {
   return (

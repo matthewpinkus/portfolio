@@ -1,5 +1,5 @@
 import React from "react";
-import { TileProps } from "../interfaces/TileProps";
+import TileProps from "@interfaces/TileProps";
 import { Link } from "react-router-dom";
 
 export default function GenericWorkExperienceSection({

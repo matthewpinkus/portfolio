@@ -1,5 +1,5 @@
 import React from "react";
-import GenericProjectSection from "./GenericProjectSection";
+import GenericProjectSection from "@components/GenericProjectSection";
 
 export default function ProjectTile() {
   return (

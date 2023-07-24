@@ -1,6 +1,6 @@
 import React from "react";
-import GenericWorkExperienceSection from "../components/GenericWorkExperienceSection";
-import StickyAboutSection from "../components/StickyAboutSection";
+import GenericWorkExperienceSection from "@components/GenericWorkExperienceSection";
+import StickyAboutSection from "@components/StickyAboutSection";
 
 export default function ExperiencePage() {
   return (
