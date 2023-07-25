@@ -1,15 +1,12 @@
 import React from "react";
+import logo from "../assets/matthew-icon.png";
 import { Link, useLocation } from "react-router-dom";
-
-import NavItem from "@components/NavItem";
-
-import logo from "@assets/matthew-icon.png";
-
-import { ReactComponent as Brackets_SVG } from "@assets/brackets.svg";
-import { ReactComponent as Terminal_SVG } from "@assets/terminal.svg";
-import { ReactComponent as Address_SVG } from "@assets/address-book.svg";
-import { ReactComponent as Laptop_SVG } from "@assets/laptop.svg";
-import { ReactComponent as User_SVG } from "@assets/user-focus.svg";
+import { ReactComponent as Brackets_SVG } from "../assets/brackets.svg";
+import { ReactComponent as Terminal_SVG } from "../assets/terminal.svg";
+import { ReactComponent as Address_SVG } from "../assets/address-book.svg";
+import { ReactComponent as Laptop_SVG } from "../assets/laptop.svg";
+import { ReactComponent as User_SVG } from "../assets/user-focus.svg";
+import NavItem from "./NavItem";
 
 export default function StickyAboutSection() {
   return (

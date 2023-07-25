@@ -1,4 +1,4 @@
-export default interface TileProps {
+export interface TileProps {
   title: string;
   company?: string | undefined;
   description: string;

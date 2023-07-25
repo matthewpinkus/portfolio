@@ -1,8 +1,8 @@
 import React from "react";
-import StickyAboutSection from "@components/StickyAboutSection";
-import WorkExperienceTile from "@components/WorkExperienceTile";
-import AboutTile from "@components/AboutTile";
-import ProjectTile from "@components/ProjectTile";
+import StickyAboutSection from "../components/StickyAboutSection";
+import AboutTile from "../components/AboutTile";
+import WorkExperienceTile from "../components/WorkExperienceTile";
+import ProjectTile from "../components/ProjectTile";
 
 export default function HomePage() {
   return (

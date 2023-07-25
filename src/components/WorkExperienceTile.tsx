@@ -1,5 +1,5 @@
 import React from "react";
-import GenericWorkExperienceSection from "@components/GenericWorkExperienceSection";
+import GenericWorkExperienceSection from "./GenericWorkExperienceSection";
 
 export default function WorkExperienceTile() {
   return (
