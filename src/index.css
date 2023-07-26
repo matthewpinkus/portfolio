@@ -28,6 +28,10 @@ code {
     @apply w-12 h-12 p-2;
   }
 
+  .social-icon {
+    @apply w-12 h-12 p-2 text-[#fff];
+  }
+
   .nav-link-divider {
     @apply ml-11 mr-4 border-b-[.5px] border-paragraph_dark border-opacity-30;
   }

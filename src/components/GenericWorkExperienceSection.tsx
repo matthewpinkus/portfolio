@@ -15,7 +15,7 @@ export default function GenericWorkExperienceSection({
       <Link to={link} target="_blank" className="cursor-pointer">
         <NewTab
           id="new-tab-svg"
-          className="nav-icon hidden absolute top-0 right-0"
+          className="nav-icon text-heading_dark hidden absolute top-0 right-0"
         />
         <h2 className="h2">{company}</h2>
         <h3 className="h3 italic">{title}</h3>

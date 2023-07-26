@@ -1,11 +1,14 @@
 import React from "react";
 import logo from "../assets/matthew-icon.png";
 import { Link, useLocation } from "react-router-dom";
-import { ReactComponent as Brackets_SVG } from "../assets/brackets.svg";
-import { ReactComponent as Terminal_SVG } from "../assets/terminal.svg";
-import { ReactComponent as Address_SVG } from "../assets/address-book.svg";
-import { ReactComponent as Laptop_SVG } from "../assets/laptop.svg";
-import { ReactComponent as User_SVG } from "../assets/user-focus.svg";
+import { ReactComponent as BRACKETS_SVG } from "../assets/brackets.svg";
+import { ReactComponent as TERMINAL_SVG } from "../assets/terminal.svg";
+import { ReactComponent as ADDRESS_SVG } from "../assets/address-book.svg";
+import { ReactComponent as LAPTOP_SVG } from "../assets/laptop.svg";
+import { ReactComponent as USER_SVG } from "../assets/user-focus.svg";
+import { ReactComponent as GITHUB_SVG } from "../assets/github.svg";
+import { ReactComponent as CODESYMBOL_SVG } from "../assets/code-symbol.svg";
+import { ReactComponent as LINKEDIN_SVG } from "../assets/linkedin.svg";
 import NavItem from "./NavItem";
 
 export default function StickyAboutSection() {
@@ -46,7 +49,7 @@ export default function StickyAboutSection() {
                 : "text-paragraph_dark_low"
             }`}
           >
-            <NavItem title="Home" SVG={Terminal_SVG} />
+            <NavItem title="Home" SVG={TERMINAL_SVG} />
             {/* <div
               id="active-wrapper"
               className="bg-[#232323] transition ease-in-out h-11 border border-[white] border-opacity-80 rounded-md shadow-sm absolute top-0.5 left-0 right-0 "
@@ -63,7 +66,7 @@ export default function StickyAboutSection() {
                 : "text-paragraph_dark_low"
             }`}
           >
-            <NavItem title="Experience" SVG={Brackets_SVG} />
+            <NavItem title="Experience" SVG={BRACKETS_SVG} />
           </Link>
           <div className="nav-link-divider" />
 
@@ -76,7 +79,7 @@ export default function StickyAboutSection() {
                 : "text-paragraph_dark_low"
             }`}
           >
-            <NavItem title="Projects" SVG={Laptop_SVG} />
+            <NavItem title="Projects" SVG={LAPTOP_SVG} />
           </Link>
           <div className="nav-link-divider" />
 
@@ -89,7 +92,7 @@ export default function StickyAboutSection() {
                 : "text-paragraph_dark_low"
             }`}
           >
-            <NavItem title="About" SVG={User_SVG} />
+            <NavItem title="About" SVG={USER_SVG} />
           </Link>
 
           <div className="nav-link-divider" />
@@ -103,13 +106,23 @@ export default function StickyAboutSection() {
                 : "text-paragraph_dark_low"
             }`}
           >
-            <NavItem title="Contact" SVG={Address_SVG} />
+            <NavItem title="Contact" SVG={ADDRESS_SVG} />
           </Link>
           <div className="nav-link-divider" />
         </div>
       </div>
       {/* Bottom wrapper for social icons? */}
-      <div className="hidden md:flex p-12 border-t-[0.5px] border-paragraph_dark border-opacity-30"></div>
+      <div className="hidden md:flex px-12 py-4 border-t-[0.5px] border-paragraph_dark border-opacity-30">
+        <Link target="_blank" to={"https://www.linkedin.com/in/matthewpinkus/"}>
+          <LINKEDIN_SVG className="social-icon" />
+        </Link>
+        <Link target="_blank" to={"https://github.com/kaildrai"}>
+          <GITHUB_SVG className="social-icon" />
+        </Link>
+        <Link target="_blank" to={"https://leetcode.com/mattaswell1/"}>
+          <CODESYMBOL_SVG className="social-icon" />
+        </Link>
+      </div>
 
       {/* //TODO: Side nav drawer on click */}
       <div className="md:hidden cursor-pointer bg-primary_dark flex flex-col justify-between h-12 w-12 items-center my-auto p-4 py-5 border rounded-lg">
