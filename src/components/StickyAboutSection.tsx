@@ -9,6 +9,9 @@ import { ReactComponent as USER_SVG } from "../assets/user-focus.svg";
 import { ReactComponent as GITHUB_SVG } from "../assets/github.svg";
 import { ReactComponent as CODESYMBOL_SVG } from "../assets/code-symbol.svg";
 import { ReactComponent as LINKEDIN_SVG } from "../assets/linkedin.svg";
+import { ReactComponent as _GITHUB_SVG } from "../assets/github-full.svg";
+import { ReactComponent as _CODESYMBOL_SVG } from "../assets/code-symbol-full.svg";
+import { ReactComponent as _LINKEDIN_SVG } from "../assets/linkedin-full.svg";
 import NavItem from "./NavItem";
 
 export default function StickyAboutSection() {
@@ -112,15 +115,33 @@ export default function StickyAboutSection() {
         </div>
       </div>
       {/* Bottom wrapper for social icons? */}
-      <div className="hidden md:flex px-12 py-4 border-t-[0.5px] border-paragraph_dark border-opacity-30">
-        <Link target="_blank" to={"https://www.linkedin.com/in/matthewpinkus/"}>
+      <div
+        id="social-icons"
+        className="hidden md:flex px-12 py-4 border-t-[0.5px] border-paragraph_dark border-opacity-30"
+      >
+        <Link
+          className="relative"
+          target="_blank"
+          to={"https://www.linkedin.com/in/matthewpinkus/"}
+        >
           <LINKEDIN_SVG className="social-icon" />
+          <_LINKEDIN_SVG className="social-icon-full absolute top-0 hidden" />
         </Link>
-        <Link target="_blank" to={"https://github.com/kaildrai"}>
+        <Link
+          className="relative"
+          target="_blank"
+          to={"https://github.com/kaildrai"}
+        >
           <GITHUB_SVG className="social-icon" />
+          <_GITHUB_SVG className="social-icon-full absolute top-0 hidden" />
         </Link>
-        <Link target="_blank" to={"https://leetcode.com/mattaswell1/"}>
+        <Link
+          className="relative"
+          target="_blank"
+          to={"https://leetcode.com/mattaswell1/"}
+        >
           <CODESYMBOL_SVG className="social-icon" />
+          <_CODESYMBOL_SVG className="social-icon-full absolute top-0 hidden" />
         </Link>
       </div>
 
