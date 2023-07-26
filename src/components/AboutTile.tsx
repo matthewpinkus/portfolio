@@ -4,7 +4,7 @@ export default function AboutTile() {
   return (
     <div className="p-4 text-paragraph_dark_low">
       <p className="mb-2">
-        Back in '99', I built my first computer at age 4 (with my father acting
+        Back in '99, I built my first computer at age 4 (with my father acting
         as overseer).
       </p>
 
@@ -35,11 +35,11 @@ export default function AboutTile() {
         </a>
         to annoy my housemates (built on an Arduino) and a headless Debian
         <a
-          href="www.mastersagency.au"
+          href=""
           className="text-paragraph_dark hover:text-subheading_dark font-bold"
         >
           {" "}
-          NAS-like Raspberry Pi server
+          NAS+ Raspberry Pi server
         </a>
         , I have taken up the mantle of Web Developer.
       </p>

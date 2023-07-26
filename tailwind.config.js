@@ -14,6 +14,9 @@ export const theme = {
   extend: {
     animation: {
       'spin-slow': 'spin 3s linear infinite',
+    },
+    transitionTimingFunction: {
+      'in-out-quart': 'cubic-bezier(0.39, 0.575, 0.565, 1)'
     }
   },
 };

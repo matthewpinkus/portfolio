@@ -17,7 +17,7 @@ export default function GenericProjectSection({
           <div
             className="
             bg-bg_dark 
-            text-heading_dark
+            text-subheading_dark
             inline-flex
             p-4
             mr-4

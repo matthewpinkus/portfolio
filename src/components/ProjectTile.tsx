@@ -4,13 +4,13 @@ import GenericProjectSection from "./GenericProjectSection";
 export default function ProjectTile() {
   return (
     <div className="p-4">
-      <h2 className="text-4xl font-bold mb-4 text-paragraph_dark uppercase">
+      <h2 className="text-3xl font-bold mb-4 text-paragraph_dark uppercase">
         Projects
       </h2>
       <GenericProjectSection
-        title="Title"
+        title="Discord Bot"
         technology={["TypeScript", "JavaScript"]}
-        description="Discord bot."
+        description="An all purpose bot for my personal discord community."
         link="https://github.com/kaildrai/discord-bot"
       />
 

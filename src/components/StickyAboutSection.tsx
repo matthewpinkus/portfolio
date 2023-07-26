@@ -47,10 +47,10 @@ export default function StickyAboutSection() {
             }`}
           >
             <NavItem title="Home" SVG={Terminal_SVG} />
-            <div
+            {/* <div
               id="active-wrapper"
               className="bg-[#232323] transition ease-in-out h-11 border border-[white] border-opacity-80 rounded-md shadow-sm absolute top-0.5 left-0 right-0 "
-            />
+            /> */}
           </Link>
           <div className="nav-link-divider" />
 
