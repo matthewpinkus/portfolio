@@ -13,10 +13,13 @@ export default function GenericWorkExperienceSection({
   return (
     <div className="tile">
       <Link to={link} target="_blank" className="cursor-pointer">
-        <NewTab className="hover:hidden nav-icon absolute top-0 right-0" />
-        <h2 className="text-2xl mb-2 text-paragraph_dark">{company}</h2>
-        <h3 className="text-1xl mb-4 font-bold italic">{title}</h3>
-        <p className=" mb-8">{description}</p>
+        <NewTab
+          id="new-tab-svg"
+          className="nav-icon hidden absolute top-0 right-0"
+        />
+        <h2 className="h2">{company}</h2>
+        <h3 className="h3 italic">{title}</h3>
+        <p className="mb-8">{description}</p>
         <div>
           {technology?.map((title) => {
             return (

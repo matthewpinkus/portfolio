@@ -24,6 +24,10 @@
   color: white;
 }
 
+.tile:hover #new-tab-svg {
+  display: block;
+}
+
 #nav-link-2:hover #hover-wrapper {
   transform: translateY(0%);
 }

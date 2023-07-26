@@ -49,8 +49,10 @@ code {
 
   .heading_sub {
   }
+
   .text_paragraph {
   }
+
   .text_word {
   }
 
@@ -60,5 +62,13 @@ code {
 
   .tile {
     @apply text-paragraph_dark_low relative opacity-70 hover:opacity-100 p-4 border-[0.5px] border-[#fff0] hover:border-[#fff5] rounded-md transition-all ease-in-out-quart duration-300;
+  }
+
+  .h2 {
+    @apply text-2xl mb-2 text-paragraph_dark;
+  }
+
+  .h3 {
+    @apply text-base mb-4 font-bold;
   }
 }
