@@ -3,7 +3,10 @@ import GenericWorkExperienceSection from "./GenericWorkExperienceSection";
 
 export default function WorkExperienceTile() {
   return (
-    <div>
+    <div className="p-4">
+      <h2 className="text-4xl font-bold mb-4 text-paragraph_dark uppercase">
+        Experience
+      </h2>
       <GenericWorkExperienceSection
         title="Web Developer & IT Consultant"
         company="Masters Agency"

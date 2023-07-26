@@ -9,19 +9,19 @@ export default function GenericProjectSection({
   link,
 }: TileProps) {
   return (
-    <div>
-      <h2 className="text-heading_dark text-5xl mb-2">{title}</h2>
-      <p className="text-paragraph_dark mb-6">{description}</p>
+    <Link target="_blank" to={link} className="">
+      <h2 className="text-paragraph_dark text-xl mb-4">{title}</h2>
+      <p className="text-paragraph_dark_low mb-8">{description}</p>
       {technology?.map((title) => {
         return (
           <div
             className="
-            bg-primary_dark 
-            text-subheading_dark 
+            bg-bg_dark 
+            text-heading_dark
             inline-flex
             p-4
             mr-4
-            mb-4
+            mb-16
             font-bold
             rounded-full"
           >
@@ -29,11 +29,6 @@ export default function GenericProjectSection({
           </div>
         );
       })}
-      <Link 
-        to={link} 
-        className="text-heading_dark flex cursor-pointer transition-all duration-300 ease-in-out hover:font-bold">
-        Read More
-      </Link>
-    </div>
+    </Link>
   );
 }

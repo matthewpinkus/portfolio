@@ -4,7 +4,7 @@ import StickyAboutSection from "../components/StickyAboutSection";
 
 export default function ExperiencePage() {
   return (
-    <div className="ml-96 p-12 bg-primary_dark">
+    <div className="ml-96 bg-primary_dark">
       <div className="flex flex-col md:flex-row">
         <StickyAboutSection />
         <GenericWorkExperienceSection
