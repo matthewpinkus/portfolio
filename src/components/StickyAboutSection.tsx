@@ -1,6 +1,7 @@
 import React from "react";
 import logo from "../assets/matthew-icon.png";
 import { Link, useLocation } from "react-router-dom";
+
 import { ReactComponent as BRACKETS_SVG } from "../assets/brackets.svg";
 import { ReactComponent as TERMINAL_SVG } from "../assets/terminal.svg";
 import { ReactComponent as ADDRESS_SVG } from "../assets/address-book.svg";
@@ -12,6 +13,7 @@ import { ReactComponent as CODESYMBOL_SVG } from "../assets/code-symbol.svg";
 import { ReactComponent as _CODESYMBOL_SVG } from "../assets/code-symbol-full.svg";
 import { ReactComponent as LINKEDIN_SVG } from "../assets/linkedin.svg";
 import { ReactComponent as _LINKEDIN_SVG } from "../assets/linkedin-full.svg";
+
 import NavItem from "./NavItem";
 
 export default function StickyAboutSection() {
@@ -21,7 +23,7 @@ export default function StickyAboutSection() {
         {/* Info wrapper */}
         <div className="flex md:p-6 md:flex-col">
           {/* Icon wrapper */}
-          <div className="w-14 md:w-28 md:mb-6 md:p-2  bg-secondary_dark rounded-full md:mx-auto">
+          <div className="w-14 md:w-28 md:mb-6 md:p-2 bg-secondary_dark rounded-full md:mx-auto">
             <img src={logo} className="mx-auto" />
           </div>
           <div className="ml-8 md:ml-0">

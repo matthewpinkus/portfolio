@@ -2,6 +2,23 @@ import React from "react";
 import GenericWorkExperienceSection from "./GenericWorkExperienceSection";
 
 export default function WorkExperienceTile() {
+  const callback = function (entries: any) {
+    entries.forEach((entry: any) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("max-md:animate-scroll-into-view");
+      } else {
+        entry.target.classList.remove("max-md:animate-scroll-into-view");
+      }
+    });
+  };
+  const targets = document.querySelectorAll(".tile");
+  const observer = new IntersectionObserver(callback);
+
+  targets.forEach(function (target) {
+    target.classList.add("opacity-0");
+    observer.observe(target);
+  });
+
   return (
     <div className="p-4">
       <h2 className="text-3xl font-bold mb-4 text-paragraph_dark uppercase">

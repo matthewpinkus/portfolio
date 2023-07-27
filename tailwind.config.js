@@ -8,12 +8,17 @@ export const theme = {
     paragraph_dark_low: "#EEE1EDAA",
     paragraph_dark: "#EEE1ED",
     heading_dark: "#7D5BA6",
-    subheading_dark: "#129490",
-    link_dark: ""
+    subheading_dark: "#129490"
   },
   extend: {
     animation: {
-      'spin-slow': 'spin 3s linear infinite',
+      'scroll-into-view': 'scroll-into-view 2s ease-in forwards'
+    },
+    keyframes: {
+      'scroll-into-view': {
+        '0%': { opacity: 0 },
+        '100%': {opacity: 1}
+      }
     },
     transitionTimingFunction: {
       'in-out-quart': 'cubic-bezier(0.39, 0.575, 0.565, 1)'
