@@ -1,6 +1,7 @@
 import React from "react";
 import { TileProps } from "../interfaces/TileProps";
 import { Link } from "react-router-dom";
+import { ReactComponent as NewTab } from "../assets/newtab.svg";
 
 export default function GenericProjectSection({
   title,
@@ -9,26 +10,39 @@ export default function GenericProjectSection({
   link,
 }: TileProps) {
   return (
-    <Link target="_blank" to={link} className="">
-      <h2 className="text-paragraph_dark text-xl mb-4">{title}</h2>
-      <p className="text-paragraph_dark_low mb-8">{description}</p>
-      {technology?.map((title) => {
-        return (
-          <div
-            className="
+    <div className="tile flex">
+      <Link to={link} target="_blank" className="cursor-pointer flex">
+        <NewTab
+          id="new-tab-svg"
+          className="nav-icon text-heading_dark hidden absolute top-0 right-0"
+        />
+        <img
+          src="https://images.unsplash.com/photo-1682695794947-17061dc284dd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
+          className="hidden md:flex max-h-24 max-w-24 mr-8"
+        />
+        <div className="flex flex-col">
+          <h3 className="h3 italic">{title}</h3>
+          <p className="mb-8">{description}</p>
+          <div>
+            {technology?.map((title) => {
+              return (
+                <div
+                  className="
             bg-bg_dark 
             text-subheading_dark
             inline-flex
             p-4
             mr-4
-            mb-16
             font-bold
             rounded-full"
-          >
-            {title}
+                >
+                  {title}
+                </div>
+              );
+            })}
           </div>
-        );
-      })}
-    </Link>
+        </div>
+      </Link>
+    </div>
   );
 }

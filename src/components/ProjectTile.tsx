@@ -7,19 +7,21 @@ export default function ProjectTile() {
       <h2 className="text-3xl font-bold mb-4 text-paragraph_dark uppercase">
         Projects
       </h2>
-      <GenericProjectSection
-        title="Discord Bot"
-        technology={["TypeScript", "JavaScript"]}
-        description="An all purpose bot for my personal discord community."
-        link="https://github.com/kaildrai/discord-bot"
-      />
+      <div className="space-y-4">
+        <GenericProjectSection
+          title="Discord Bot"
+          technology={["TypeScript", "JavaScript"]}
+          description="An all purpose bot for my personal discord community."
+          link="https://github.com/kaildrai/discord-bot"
+        />
 
-      <GenericProjectSection
-        title="Title"
-        technology={["TypeScript", "JavaScript"]}
-        description="Description"
-        link="projects"
-      />
+        <GenericProjectSection
+          title="Title"
+          technology={["TypeScript", "JavaScript"]}
+          description="Description"
+          link="projects"
+        />
+      </div>
     </div>
   );
 }

@@ -68,8 +68,20 @@ code {
     @apply p-6;
   }
 
+  .technology-tag {
+    @apply bg-bg_dark 
+          text-subheading_dark
+            inline-flex
+            px-4
+            py-2
+            mr-4
+            mb-4
+            font-bold
+            rounded-full;
+  }
+
   .tile {
-    @apply text-paragraph_dark_low relative opacity-70 hover:opacity-100 p-4 border-[0.5px] border-[#fff0] hover:border-[#fff5] rounded-md transition-all ease-in-out-quart duration-300;
+    @apply text-paragraph_dark_low relative hover:bg-[#00000005] p-4 border-[0.5px] border-[#fff0] hover:border-subheading_dark rounded-md transition-all ease-in-out-quart duration-300;
   }
 
   .h2 {
