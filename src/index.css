@@ -17,7 +17,7 @@ code {
 
 @layer components {
   .nav-link {
-    @apply w-full h-11 z-[1] transition-colors duration-200 hover:text-[#ffffff];
+    @apply w-full h-11 z-[1] transition-colors ease-in-out-quart duration-200 hover:text-[#ffffff];
   }
 
   .nav-link-content {
@@ -29,11 +29,11 @@ code {
   }
 
   .social-icon {
-    @apply w-12 h-12 p-2 text-[#fff];
+    @apply w-12 h-12 p-2 text-[#fff] transition-all ease-in-out-quart duration-500;
   }
 
   .social-icon-full {
-    @apply w-12 h-12 p-2 text-[#fff];
+    @apply w-12 h-12 p-2 transition-all ease-in-out-quart duration-500;
   }
 
   .nav-link-divider {

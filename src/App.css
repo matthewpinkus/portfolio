@@ -28,6 +28,19 @@
   display: block;
 }
 
+#social-icons > a:hover .social-icon-full {
+  display: block;
+  opacity: 100;
+
+  filter: invert(99%) sepia(0%) saturate(7393%) hue-rotate(191deg)
+    brightness(136%) contrast(100%);
+}
+
+#social-icons > a:hover .social-icon {
+  display: hidden;
+  opacity: 0;
+}
+
 #nav-link-2:hover #hover-wrapper {
   transform: translateY(0%);
 }

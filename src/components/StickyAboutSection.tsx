@@ -7,10 +7,10 @@ import { ReactComponent as ADDRESS_SVG } from "../assets/address-book.svg";
 import { ReactComponent as LAPTOP_SVG } from "../assets/laptop.svg";
 import { ReactComponent as USER_SVG } from "../assets/user-focus.svg";
 import { ReactComponent as GITHUB_SVG } from "../assets/github.svg";
-import { ReactComponent as CODESYMBOL_SVG } from "../assets/code-symbol.svg";
-import { ReactComponent as LINKEDIN_SVG } from "../assets/linkedin.svg";
 import { ReactComponent as _GITHUB_SVG } from "../assets/github-full.svg";
+import { ReactComponent as CODESYMBOL_SVG } from "../assets/code-symbol.svg";
 import { ReactComponent as _CODESYMBOL_SVG } from "../assets/code-symbol-full.svg";
+import { ReactComponent as LINKEDIN_SVG } from "../assets/linkedin.svg";
 import { ReactComponent as _LINKEDIN_SVG } from "../assets/linkedin-full.svg";
 import NavItem from "./NavItem";
 
@@ -125,7 +125,7 @@ export default function StickyAboutSection() {
           to={"https://www.linkedin.com/in/matthewpinkus/"}
         >
           <LINKEDIN_SVG className="social-icon" />
-          <_LINKEDIN_SVG className="social-icon-full absolute top-0 hidden" />
+          <_LINKEDIN_SVG className="social-icon-full absolute top-0 opacity-0" />
         </Link>
         <Link
           className="relative"
@@ -133,7 +133,7 @@ export default function StickyAboutSection() {
           to={"https://github.com/kaildrai"}
         >
           <GITHUB_SVG className="social-icon" />
-          <_GITHUB_SVG className="social-icon-full absolute top-0 hidden" />
+          <_GITHUB_SVG className="social-icon-full absolute top-0 opacity-0" />
         </Link>
         <Link
           className="relative"
@@ -141,7 +141,7 @@ export default function StickyAboutSection() {
           to={"https://leetcode.com/mattaswell1/"}
         >
           <CODESYMBOL_SVG className="social-icon" />
-          <_CODESYMBOL_SVG className="social-icon-full absolute top-0 hidden" />
+          <_CODESYMBOL_SVG className="social-icon-full absolute top-0 opacity-0" />
         </Link>
       </div>
 
