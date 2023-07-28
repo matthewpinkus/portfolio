@@ -1,31 +1,44 @@
-import React from "react";
-import GenericWorkExperienceSection from "./GenericWorkExperienceSection";
+import React, { useEffect, useRef, useState } from "react";
+import ExperienceTile from "./ExperienceTile";
 
-export default function WorkExperienceTile() {
-  const callback = function (entries: any) {
-    entries.forEach((entry: any) => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add("max-md:animate-scroll-into-view");
-      } else {
-        entry.target.classList.remove("max-md:animate-scroll-into-view");
+export default function Experience() {
+  const [isIntersecting, setIsIntersecting] = useState(false);
+  const ref: any = useRef(null);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        setIsIntersecting(entry.isIntersecting);
+      },
+      {
+        rootMargin: "-150px",
       }
-    });
-  };
-  const targets = document.querySelectorAll(".tile");
-  const observer = new IntersectionObserver(callback);
+    );
+    console.log(isIntersecting);
 
-  targets.forEach(function (target) {
-    target.classList.add("opacity-0");
-    observer.observe(target);
-  });
+    observer.observe(ref.current);
+    return () => observer.disconnect();
+  }, [isIntersecting]);
+
+  useEffect(() => {
+    if (isIntersecting) {
+      ref.current.querySelectorAll("div").forEach((el: HTMLDivElement) => {
+        el.classList.add("slide-in");
+      });
+    } else {
+      ref.current.querySelectorAll("div").forEach((el: HTMLDivElement) => {
+        el.classList.remove("slide-in");
+      });
+    }
+  }, [isIntersecting]);
 
   return (
-    <div className="p-4">
+    <div ref={ref} className="p-4">
       <h2 className="text-3xl font-bold mb-4 text-paragraph_dark uppercase">
         Relevant Experience
       </h2>
       <div id="work-experience" className="space-y-4">
-        <GenericWorkExperienceSection
+        <ExperienceTile
           title="Web Developer & IT Consultant"
           company="Masters Agency"
           description="Masters Agency is a marketing company that offers comprehensive desgins, web development, 
@@ -43,7 +56,7 @@ export default function WorkExperienceTile() {
             "AWS",
           ]}
         />
-        <GenericWorkExperienceSection
+        <ExperienceTile
           title="Full Stack Developer"
           company="Yora Settlements"
           description="Creating "

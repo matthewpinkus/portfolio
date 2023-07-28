@@ -3,7 +3,7 @@ import { TileProps } from "../interfaces/TileProps";
 import { Link } from "react-router-dom";
 import { ReactComponent as NewTab } from "../assets/newtab.svg";
 
-export default function GenericWorkExperienceSection({
+export default function ExperienceTile({
   title,
   company,
   description,

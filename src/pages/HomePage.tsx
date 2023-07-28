@@ -1,8 +1,8 @@
 import React from "react";
 import StickyAboutSection from "../components/StickyAboutSection";
 import AboutTile from "../components/AboutTile";
-import WorkExperienceTile from "../components/WorkExperienceTile";
-import ProjectTile from "../components/ProjectTile";
+import Experience from "../components/Experience";
+import Projects from "../components/Projects";
 
 export default function HomePage() {
   return (
@@ -14,11 +14,11 @@ export default function HomePage() {
 
           <div className="divider" />
 
-          <WorkExperienceTile />
+          <Experience />
 
           <div className="divider" />
 
-          <ProjectTile />
+          <Projects />
 
           <div className="divider" />
 

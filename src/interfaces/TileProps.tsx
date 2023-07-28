@@ -4,4 +4,5 @@ export interface TileProps {
   description: string;
   technology?: string[] | undefined;
   link: string;
+  ref?: HTMLDivElement;
 }
