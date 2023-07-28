@@ -1,5 +1,8 @@
 import { useEffect, useRef, useState } from "react";
 import ExperienceTile from "./ExperienceTile";
+import { Link } from "react-router-dom";
+
+import { ReactComponent as ARROW_SVG } from "../assets/arrow-right.svg";
 
 export default function Experience() {
   const [isIntersecting, setIsIntersecting] = useState(false);
@@ -63,7 +66,13 @@ export default function Experience() {
           link="https://yora.tech"
           technology={["HTML", "CSS", "JavaScript"]}
         />
+        <div></div>
       </div>
+      <Link to="/experience" className="text-white py-6">
+        <span className="inline-flex items-center uppercase">
+          See all experience <ARROW_SVG className="w-10 h-10 p-2" />{" "}
+        </span>
+      </Link>
     </div>
   );
 }
