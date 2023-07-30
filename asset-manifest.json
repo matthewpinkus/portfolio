@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/react-website/static/css/main.47ba2466.css",
-    "main.js": "/react-website/static/js/main.8384a116.js",
+    "main.css": "/react-website/static/css/main.44ce31bf.css",
+    "main.js": "/react-website/static/js/main.723c0d76.js",
     "static/js/787.71e672d5.chunk.js": "/react-website/static/js/787.71e672d5.chunk.js",
     "static/media/matthew-icon.png": "/react-website/static/media/matthew-icon.3d7668cea3e2877375d3.png",
     "static/media/address-book.svg": "/react-website/static/media/address-book.f5efd1901e929b02dce9afff722b5578.svg",
@@ -17,12 +17,12 @@
     "static/media/code-symbol-full.svg": "/react-website/static/media/code-symbol-full.ff3bf1ea4b4a20ae10374f04bb6eee79.svg",
     "static/media/linkedin-full.svg": "/react-website/static/media/linkedin-full.ffcde684d309cb80717c36f2c5fc9ddb.svg",
     "static/media/code-symbol.svg": "/react-website/static/media/code-symbol.b647b4cab665ced88a825c2dd57f8622.svg",
-    "main.47ba2466.css.map": "/react-website/static/css/main.47ba2466.css.map",
-    "main.8384a116.js.map": "/react-website/static/js/main.8384a116.js.map",
+    "main.44ce31bf.css.map": "/react-website/static/css/main.44ce31bf.css.map",
+    "main.723c0d76.js.map": "/react-website/static/js/main.723c0d76.js.map",
     "787.71e672d5.chunk.js.map": "/react-website/static/js/787.71e672d5.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.47ba2466.css",
-    "static/js/main.8384a116.js"
+    "static/css/main.44ce31bf.css",
+    "static/js/main.723c0d76.js"
   ]
 }
