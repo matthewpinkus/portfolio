@@ -1,8 +1,8 @@
 import React from "react";
 
-export default function AboutTile() {
+export default function About() {
   return (
-    <div className="p-4 text-paragraph_dark_low">
+    <div className="container text-paragraph_dark_low">
       <p className="mb-2">
         Back in '99, I built my first computer at age 4 (with my father acting
         as overseer).

@@ -17,8 +17,11 @@ code {
 
 @layer components {
   /* Formatting */
-  .section {
-    @apply p-6;
+  .container {
+    @apply p-4 md:p-6;
+  }
+
+  .content {
   }
 
   /* Nav items */
@@ -33,10 +36,7 @@ code {
   .nav-icon {
     @apply w-12 h-12 p-2;
   }
-  /* #social-icons > a:hover .social-icon {
-  display: hidden;
-  opacity: 0;
-} */
+
   .social-icon {
     @apply w-12 h-12 p-2 text-[#fff] [&>a>svg]:hover:hidden [&>a>svg]:hover:opacity-0 transition-all ease-in-out-quart duration-500;
   }
@@ -110,6 +110,6 @@ code {
   }
 
   .tile {
-    @apply text-paragraph_dark_low relative p-4 border-[0.5px] border-[#fff0] rounded-md hover:!opacity-100 [&>a>svg]:hover:block;
+    @apply text-paragraph_dark_low relative mx-[-1rem] p-4 border-[0.5px] border-[#fff0] rounded-md hover:!opacity-100 [&>a>svg]:hover:block;
   }
 }

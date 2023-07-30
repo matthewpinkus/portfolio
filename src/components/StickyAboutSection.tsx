@@ -18,19 +18,19 @@ import NavItem from "./NavItem";
 
 export default function StickyAboutSection() {
   return (
-    <div className="bg-bg_dark border-b-[.5px] z-10 border-paragraph_dark border-opacity-30 p-6 sticky top-0 left-0 flex justify-between md:p-0 md:flex-col md:h-full md:fixed md:top-0 md:left-0 md:shadow-[5px_0px_20px_0px_rgba(0,0,0,0.2)]">
-      <div className="md:w-96 md:p-12">
+    <div className="max-md:hidden w-80 fixed top-0 left-0 flex z-10 border-paragraph_dark border-opacity-30 justify-between bg-bg_dark border-b-[.5px] flex-col h-full shadow-[5px_0px_20px_0px_rgba(0,0,0,0.2)]">
+      <div className="p-8">
         {/* Info wrapper */}
-        <div className="flex md:p-6 md:flex-col">
+        <div className="flex p-6 flex-col">
           {/* Icon wrapper */}
-          <div className="w-14 md:w-28 md:mb-6 md:p-2 bg-secondary_dark rounded-full md:mx-auto">
+          <div className="w-28 mb-6 p-2 bg-secondary_dark rounded-full mx-auto">
             <img src={logo} className="mx-auto" />
           </div>
-          <div className="ml-8 md:ml-0">
-            <h1 className="text-heading_dark font-bold text-2xl text-center">
+          <div className="ml-0 flex items-center flex-col">
+            <h1 className="block text-heading_dark font-bold text-2xl text-center">
               Matthew Pinkus
             </h1>
-            <h2 className="italic md:block text-subheading_dark font-italic text-xl md:text-center">
+            <h2 className="italic block text-subheading_dark font-italic text-xl text-center">
               Software Engineer
             </h2>
           </div>
@@ -39,7 +39,7 @@ export default function StickyAboutSection() {
         {/* Link wrapper */}
         <div
           id="nav-link-wrapper"
-          className="md:flex md:flex-col hidden mt-12 relative text-paragraph_dark_low"
+          className="flex flex-col mt-12 relative text-paragraph_dark_low"
         >
           {/* <div
             id="hover-wrapper"
@@ -119,7 +119,7 @@ export default function StickyAboutSection() {
       {/* Bottom wrapper for social icons? */}
       <div
         id="social-icons"
-        className="hidden md:flex px-12 py-4 border-t-[0.5px] border-paragraph_dark border-opacity-30"
+        className="flex px-12 py-4 border-t-[0.5px] border-paragraph_dark border-opacity-30"
       >
         <Link
           className="relative"
@@ -145,12 +145,6 @@ export default function StickyAboutSection() {
           <CODESYMBOL_SVG className="social-icon" />
           <_CODESYMBOL_SVG className="social-icon-full absolute top-0 opacity-0" />
         </Link>
-      </div>
-
-      {/* //TODO: Side nav drawer on click */}
-      <div className="md:hidden cursor-pointer bg-primary_dark flex flex-col justify-between h-12 w-12 items-center my-auto p-4 py-5 border rounded-lg">
-        <div className="nav-line-top" />
-        <div className="nav-line-bottom" />
       </div>
     </div>
   );

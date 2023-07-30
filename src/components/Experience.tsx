@@ -20,14 +20,14 @@ export default function Experience() {
 
   useEffect(() => {
     if (isIntersecting) {
-      mobileAnimation.current.classList.add("[&>*]:max-lg:opacity-30");
+      mobileAnimation.current.classList.add("[&>*]:max-md:opacity-30");
     } else {
-      mobileAnimation.current.classList.remove("[&>*]:max-lg:opacity-30");
+      mobileAnimation.current.classList.remove("[&>*]:max-md:opacity-30");
     }
   }, [isIntersecting]);
 
   return (
-    <div className="p-4">
+    <div className="container">
       <h2 className="text-3xl font-bold mb-4 text-paragraph_dark uppercase">
         Relevant Experience
       </h2>
