@@ -16,6 +16,12 @@ code {
 }
 
 @layer components {
+  /* Formatting */
+  .section {
+    @apply p-6;
+  }
+
+  /* Nav items */
   .nav-link {
     @apply w-full h-11 z-[1] transition-colors ease-in-out-quart duration-200 hover:text-[#ffffff];
   }
@@ -27,9 +33,12 @@ code {
   .nav-icon {
     @apply w-12 h-12 p-2;
   }
-
+  /* #social-icons > a:hover .social-icon {
+  display: hidden;
+  opacity: 0;
+} */
   .social-icon {
-    @apply w-12 h-12 p-2 text-[#fff] transition-all ease-in-out-quart duration-500;
+    @apply w-12 h-12 p-2 text-[#fff] [&>a>svg]:hover:hidden [&>a>svg]:hover:opacity-0 transition-all ease-in-out-quart duration-500;
   }
 
   .social-icon-full {
@@ -40,10 +49,6 @@ code {
     @apply ml-11 mr-4 border-b-[.5px] border-paragraph_dark border-opacity-30;
   }
 
-  .divider {
-    @apply border-b-[.5px] border-paragraph_dark border-opacity-10;
-  }
-
   .nav-line-top {
     @apply w-6 border-b-[.5px] border-paragraph_dark border-opacity-80;
   }
@@ -52,6 +57,11 @@ code {
     @apply w-6 border-b-[.5px] border-paragraph_dark border-opacity-80;
   }
 
+  .divider {
+    @apply border-b-[.5px] border-paragraph_dark border-opacity-10;
+  }
+
+  /* Typography */
   .heading_title {
   }
 
@@ -64,10 +74,29 @@ code {
   .text_word {
   }
 
-  .section {
-    @apply p-6;
+  .h2 {
+    @apply text-2xl mb-2 text-paragraph_dark;
   }
 
+  .h3 {
+    @apply text-base mb-4 font-bold;
+  }
+
+  /* Animations */
+
+  .quart-in-out {
+    @apply transition-all ease-in-out-quart duration-300;
+  }
+
+  .border-slide-in {
+    @apply bg-[#00000005] !border-subheading_dark !opacity-100 [&>a>svg]:block;
+  }
+
+  .hover-border {
+    @apply hover:bg-[#00000005] hover:border-subheading_dark;
+  }
+
+  /* Specifics */
   .technology-tag {
     @apply bg-bg_dark 
           text-subheading_dark
@@ -81,14 +110,6 @@ code {
   }
 
   .tile {
-    @apply text-paragraph_dark_low relative hover:bg-[#00000005] p-4 border-[0.5px] border-[#fff0] hover:border-subheading_dark rounded-md transition-all ease-in-out-quart duration-300;
-  }
-
-  .h2 {
-    @apply text-2xl mb-2 text-paragraph_dark;
-  }
-
-  .h3 {
-    @apply text-base mb-4 font-bold;
+    @apply text-paragraph_dark_low relative p-4 border-[0.5px] border-[#fff0] rounded-md hover:!opacity-100 [&>a>svg]:hover:block;
   }
 }

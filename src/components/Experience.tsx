@@ -1,9 +1,9 @@
-import React, { useEffect, useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import ExperienceTile from "./ExperienceTile";
 
 export default function Experience() {
   const [isIntersecting, setIsIntersecting] = useState(false);
-  const ref: any = useRef(null);
+  const mobileAnimation: any = useRef(null);
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -14,30 +14,28 @@ export default function Experience() {
         rootMargin: "-150px",
       }
     );
-    console.log(isIntersecting);
-
-    observer.observe(ref.current);
+    observer.observe(mobileAnimation.current);
     return () => observer.disconnect();
   }, [isIntersecting]);
 
   useEffect(() => {
     if (isIntersecting) {
-      ref.current.querySelectorAll("div").forEach((el: HTMLDivElement) => {
-        el.classList.add("slide-in");
-      });
+      mobileAnimation.current.classList.add("[&>*]:max-lg:opacity-30");
     } else {
-      ref.current.querySelectorAll("div").forEach((el: HTMLDivElement) => {
-        el.classList.remove("slide-in");
-      });
+      mobileAnimation.current.classList.remove("[&>*]:max-lg:opacity-30");
     }
   }, [isIntersecting]);
 
   return (
-    <div ref={ref} className="p-4">
+    <div className="p-4">
       <h2 className="text-3xl font-bold mb-4 text-paragraph_dark uppercase">
         Relevant Experience
       </h2>
-      <div id="work-experience" className="space-y-4">
+      <div
+        ref={mobileAnimation}
+        id="work-experience"
+        className="space-y-4 [&>*]:hover:opacity-30"
+      >
         <ExperienceTile
           title="Web Developer & IT Consultant"
           company="Masters Agency"

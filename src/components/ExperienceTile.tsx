@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { TileProps } from "../interfaces/TileProps";
 import { Link } from "react-router-dom";
 import { ReactComponent as NewTab } from "../assets/newtab.svg";
@@ -10,8 +10,32 @@ export default function ExperienceTile({
   link,
   technology,
 }: TileProps) {
+  const [isIntersecting, setIsIntersecting] = useState(false);
+  const tile: any = useRef(null);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        setIsIntersecting(entry.isIntersecting);
+      },
+      {
+        rootMargin: "-50%",
+      }
+    );
+    observer.observe(tile.current);
+    return () => observer.disconnect();
+  }, [isIntersecting]);
+
+  useEffect(() => {
+    if (isIntersecting) {
+      tile.current.classList.add("border-slide-in");
+    } else {
+      tile.current.classList.remove("border-slide-in");
+    }
+  }, [isIntersecting]);
+
   return (
-    <div className="tile">
+    <div ref={tile} className="tile quart-in-out hover-border">
       <Link to={link} target="_blank" className="cursor-pointer">
         <NewTab
           id="new-tab-svg"

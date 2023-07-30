@@ -24,10 +24,6 @@
   color: white;
 }
 
-.tile:hover #new-tab-svg {
-  display: block;
-}
-
 #social-icons > a:hover .social-icon-full {
   display: block;
   opacity: 100;
@@ -39,32 +35,4 @@
 #social-icons > a:hover .social-icon {
   display: hidden;
   opacity: 0;
-}
-
-#work-experience:hover .tile {
-  opacity: 0.3 !important;
-}
-
-#work-experience .tile:hover {
-  opacity: 1 !important;
-}
-
-#nav-link-2:hover #hover-wrapper {
-  transform: translateY(0%);
-}
-
-#nav-link-2:hover #hover-wrapper {
-  transform: translateY(100%);
-}
-
-#nav-link-3:hover ~ #hover-wrapper {
-  transform: translateY(200%);
-}
-
-#nav-link-4:hover ~ #hover-wrapper {
-  transform: translateY(300%);
-}
-
-#nav-link-5:hover ~ #hover-wrapper {
-  transform: translateY(400%);
 }
