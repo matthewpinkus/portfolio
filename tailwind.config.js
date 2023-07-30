@@ -3,6 +3,7 @@ export const content = ["./src/**/*.{js,jsx,ts,tsx}"];
 export const theme = {
   colors: {
     primary_dark: "#0D1B2A",
+    primary_dark_low: "#0D1B2A88",
     secondary_dark: "#415A77",
     bg_dark: "#1C1D21",
     paragraph_dark_low: "#EEE1EDAA",

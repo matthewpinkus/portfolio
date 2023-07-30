@@ -28,9 +28,9 @@ export default function ExperienceTile({
 
   useEffect(() => {
     if (isIntersecting) {
-      tile.current.classList.add("border-slide-in");
+      tile.current.classList.add("max-md:border-slide-in");
     } else {
-      tile.current.classList.remove("border-slide-in");
+      tile.current.classList.remove("max-md:border-slide-in");
     }
   }, [isIntersecting]);
 

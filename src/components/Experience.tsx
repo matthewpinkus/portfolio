@@ -28,9 +28,11 @@ export default function Experience() {
 
   return (
     <div className="container">
-      <h2 className="text-3xl font-bold mb-4 text-paragraph_dark uppercase">
-        Relevant Experience
-      </h2>
+      <div className="mobile-sticky-heading">
+        <h2 className="text-2xl md:text-3xl font-bold text-paragraph_dark uppercase">
+          Relevant Experience
+        </h2>
+      </div>
       <div
         ref={mobileAnimation}
         id="work-experience"
