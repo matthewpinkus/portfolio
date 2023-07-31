@@ -2,7 +2,12 @@ import React from "react";
 
 export default function About() {
   return (
-    <div className="container text-paragraph_dark_low">
+    <div className="container relative text-paragraph_dark_low">
+      <div className="mobile-sticky-heading">
+        <h2 className="text-2xl max-md:ml-4 md:text-3xl font-bold text-paragraph_dark uppercase">
+          About
+        </h2>
+      </div>
       <p className="mb-2">
         Back in '99, I built my first computer at age 4 (with my father acting
         as overseer).

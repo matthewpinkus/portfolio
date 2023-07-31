@@ -32,7 +32,7 @@ export default function Experience() {
   return (
     <div id="experience" className="container">
       <div className="mobile-sticky-heading">
-        <h2 className="text-2xl md:text-3xl font-bold text-paragraph_dark uppercase">
+        <h2 className="text-2xl max-md:ml-4 md:text-3xl font-bold text-paragraph_dark uppercase">
           Relevant Experience
         </h2>
       </div>
