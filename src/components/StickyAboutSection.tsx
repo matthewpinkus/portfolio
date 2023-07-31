@@ -18,20 +18,20 @@ import NavItem from "./NavItem";
 
 export default function StickyAboutSection() {
   return (
-    <div className="max-md:hidden w-80 fixed top-0 left-0 flex z-10 border-paragraph_dark border-opacity-30 justify-between bg-bg_dark border-b-[.5px] flex-col h-full shadow-[5px_0px_20px_0px_rgba(0,0,0,0.2)]">
+    <div className="max-md:hidden w-80 fixed top-0 left-0 flex z-10 justify-between flex-col h-full">
       <div className="p-8">
         {/* Info wrapper */}
         <div className="flex p-6 flex-col">
           {/* Icon wrapper */}
-          <div className="w-28 mb-6 p-2 bg-secondary_dark rounded-full mx-auto">
+          <div className="w-36 mb-6 p-2 mx-auto">
             <img src={logo} className="mx-auto" />
           </div>
           <div className="ml-0 flex items-center flex-col">
             <h1 className="block text-heading_dark font-bold text-2xl text-center">
               Matthew Pinkus
             </h1>
-            <h2 className="italic block text-subheading_dark font-italic text-xl text-center">
-              Software Engineer
+            <h2 className="block text-subheading_dark font-italic text-xl text-center">
+              Full Stack Developer
             </h2>
           </div>
         </div>
@@ -54,17 +54,16 @@ export default function StickyAboutSection() {
                 : "text-paragraph_dark_low"
             }`}
           >
-            <NavItem title="Home" SVG={TERMINAL_SVG} />
+            <NavItem title="About" SVG={TERMINAL_SVG} />
             {/* <div
               id="active-wrapper"
               className="bg-[#232323] transition ease-in-out h-11 border border-[white] border-opacity-80 rounded-md shadow-sm absolute top-0.5 left-0 right-0 "
             /> */}
           </Link>
-          <div className="nav-link-divider" />
 
-          <Link
+          <a
             id="nav-link-2"
-            to="/experience"
+            href="/#experience"
             className={`nav-link ${
               useLocation().pathname === "/experience"
                 ? "text-[#ffffff]"
@@ -72,8 +71,7 @@ export default function StickyAboutSection() {
             }`}
           >
             <NavItem title="Experience" SVG={BRACKETS_SVG} />
-          </Link>
-          <div className="nav-link-divider" />
+          </a>
 
           <Link
             id="nav-link-3"
@@ -86,41 +84,10 @@ export default function StickyAboutSection() {
           >
             <NavItem title="Projects" SVG={LAPTOP_SVG} />
           </Link>
-          <div className="nav-link-divider" />
-
-          <Link
-            id="nav-link-4"
-            to="/about"
-            className={`nav-link ${
-              useLocation().pathname === "/about"
-                ? "text-[#ffffff]"
-                : "text-paragraph_dark_low"
-            }`}
-          >
-            <NavItem title="About" SVG={USER_SVG} />
-          </Link>
-
-          <div className="nav-link-divider" />
-
-          <Link
-            id="nav-link-5"
-            to="/contact"
-            className={`nav-link ${
-              useLocation().pathname === "/contact"
-                ? "text-[#ffffff]"
-                : "text-paragraph_dark_low"
-            }`}
-          >
-            <NavItem title="Contact" SVG={ADDRESS_SVG} />
-          </Link>
-          <div className="nav-link-divider" />
         </div>
       </div>
       {/* Bottom wrapper for social icons? */}
-      <div
-        id="social-icons"
-        className="flex px-12 py-4 border-t-[0.5px] border-paragraph_dark border-opacity-30"
-      >
+      <div id="social-icons" className="flex p-12">
         <Link
           className="relative"
           target="_blank"

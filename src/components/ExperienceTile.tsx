@@ -12,7 +12,6 @@ export default function ExperienceTile({
 }: TileProps) {
   const [isIntersecting, setIsIntersecting] = useState(false);
   const tile: any = useRef(null);
-
   useEffect(() => {
     const observer = new IntersectionObserver(
       ([entry]) => {

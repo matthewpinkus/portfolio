@@ -27,7 +27,7 @@ export default function Experience() {
   }, [isIntersecting]);
 
   return (
-    <div className="container">
+    <div id="experience" className="container">
       <div className="mobile-sticky-heading">
         <h2 className="text-2xl md:text-3xl font-bold text-paragraph_dark uppercase">
           Relevant Experience
