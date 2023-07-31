@@ -3,6 +3,7 @@ import StickyAboutSection from "../components/StickyAboutSection";
 import About from "../components/About";
 import Experience from "../components/Experience";
 import Projects from "../components/Projects";
+import Technologies from "../components/Technologies";
 
 export default function HomePage() {
   return (
@@ -22,12 +23,7 @@ export default function HomePage() {
 
           <div className="divider" />
 
-          <div className="">
-            <h2 className="text-3xl font-bold mb-4">Technologies</h2>
-            <p>Tiles go here?</p>
-          </div>
-
-          <div className="divider" />
+          <Technologies />
         </div>
       </div>
     </div>

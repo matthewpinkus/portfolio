@@ -4,9 +4,7 @@ import { Link, useLocation } from "react-router-dom";
 
 import { ReactComponent as BRACKETS_SVG } from "../assets/brackets.svg";
 import { ReactComponent as TERMINAL_SVG } from "../assets/terminal.svg";
-import { ReactComponent as ADDRESS_SVG } from "../assets/address-book.svg";
 import { ReactComponent as LAPTOP_SVG } from "../assets/laptop.svg";
-import { ReactComponent as USER_SVG } from "../assets/user-focus.svg";
 import { ReactComponent as GITHUB_SVG } from "../assets/github.svg";
 import { ReactComponent as _GITHUB_SVG } from "../assets/github-full.svg";
 import { ReactComponent as CODESYMBOL_SVG } from "../assets/code-symbol.svg";
@@ -41,10 +39,6 @@ export default function StickyAboutSection() {
           id="nav-link-wrapper"
           className="flex flex-col mt-12 relative text-paragraph_dark_low"
         >
-          {/* <div
-            id="hover-wrapper"
-            className="bg-[#232323] h-11 border border-[white] border-opacity-80 rounded-md shadow-sm absolute top-0 left-0 right-0 bottom-auto"
-          /> */}
           <Link
             id="nav-link-1"
             to="/"
@@ -54,16 +48,12 @@ export default function StickyAboutSection() {
                 : "text-paragraph_dark_low"
             }`}
           >
-            <NavItem title="About" SVG={TERMINAL_SVG} />
-            {/* <div
-              id="active-wrapper"
-              className="bg-[#232323] transition ease-in-out h-11 border border-[white] border-opacity-80 rounded-md shadow-sm absolute top-0.5 left-0 right-0 "
-            /> */}
+            <NavItem title="Home" SVG={TERMINAL_SVG} />
           </Link>
 
-          <a
+          <Link
             id="nav-link-2"
-            href="/#experience"
+            to="/experience"
             className={`nav-link ${
               useLocation().pathname === "/experience"
                 ? "text-[#ffffff]"
@@ -71,7 +61,7 @@ export default function StickyAboutSection() {
             }`}
           >
             <NavItem title="Experience" SVG={BRACKETS_SVG} />
-          </a>
+          </Link>
 
           <Link
             id="nav-link-3"

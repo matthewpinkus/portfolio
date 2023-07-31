@@ -38,7 +38,7 @@ export default function ExperienceTile({
       <Link to={link} target="_blank" className="cursor-pointer">
         <NewTab
           id="new-tab-svg"
-          className="nav-icon text-heading_dark hidden absolute top-0 right-0"
+          className="nav-icon text-heading_dark hidden absolute top-2' right-2 w-8 h-8"
         />
         <h2 className="h2">{company}</h2>
         <h3 className="h3 italic">{title}</h3>
