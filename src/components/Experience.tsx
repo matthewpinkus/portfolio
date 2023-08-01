@@ -46,8 +46,8 @@ export default function Experience() {
           company="Masters Agency"
           description="Masters Agency is a marketing company that offers comprehensive desgins, web development, 
                       marketing and IT maintenance services for over 30 clients. 
-                      In my time here as the sole developer I have developed and continue to maintain over a half dozen websites, 
-                      created custom widgets/effects with JS/CSS, liased with clients to understand and meet their requirements and 
+                      In my time here as the sole developer I have developed and continue to maintain over a half dozen websites on Webflow and WordPress, 
+                      created custom widgets, designs and animations with JS/CSS, liased with clients to understand and meet their requirements and 
                       deliver them in a timely manner."
           link="https://mastersagency.au"
           technology={[
@@ -62,9 +62,17 @@ export default function Experience() {
         <ExperienceTile
           title="Full Stack Developer"
           company="Yora Settlements"
-          description="Creating "
+          description="In a solo or two-person team, I created custom AWS OAuth authentication and routing for a single-page Svelte application,
+                      implemented a password recovery system, developed the landing page & crypto chart tables for yora.tech."
           link="https://yora.tech"
-          technology={["HTML", "CSS", "JavaScript"]}
+          technology={[
+            "HTML",
+            "SCSS",
+            "TypeScript",
+            "JavaScript",
+            "AWS",
+            "REST API",
+          ]}
         />
         <div></div>
       </div>

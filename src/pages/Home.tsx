@@ -9,7 +9,7 @@ export default function HomePage() {
   return (
     <div className="md:ml-80 bg-primary_dark">
       <StickyAboutSection />
-      <div className="flex flex-col container md:flex-row">
+      <div className="flex flex-col md:flex-row">
         <div className="space-y-8 w-full text-paragraph_dark">
           <About />
 

@@ -65,9 +65,9 @@ export default function StickyAboutSection() {
 
           <Link
             id="nav-link-3"
-            to="/projects"
+            to="/archives"
             className={`nav-link ${
-              useLocation().pathname === "/projects"
+              useLocation().pathname === "/archives"
                 ? "text-[#ffffff]"
                 : "text-paragraph_dark_low"
             }`}

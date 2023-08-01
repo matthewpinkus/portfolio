@@ -21,9 +21,6 @@ code {
     @apply p-4 md:p-6;
   }
 
-  .content {
-  }
-
   /* Nav items */
   .nav-link {
     @apply w-full h-11 z-[1] transition-colors ease-in-out-quart duration-200 hover:text-[#ffffff];
@@ -57,19 +54,6 @@ code {
     @apply border-b-[.5px] border-paragraph_dark border-opacity-10;
   }
 
-  /* Typography */
-  .heading_title {
-  }
-
-  .heading_sub {
-  }
-
-  .text_paragraph {
-  }
-
-  .text_word {
-  }
-
   .h2 {
     @apply text-2xl mb-2 text-paragraph_dark;
   }
@@ -96,8 +80,9 @@ code {
     @apply bg-bg_dark 
           text-subheading_dark
             inline-flex
+            text-xs
             px-4
-            py-2
+            py-1
             mr-4
             mb-4
             font-bold

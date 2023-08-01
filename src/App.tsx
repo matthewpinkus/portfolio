@@ -1,16 +1,14 @@
 import React from "react";
 import "./App.css";
 import { Routes, Route } from "react-router-dom";
-import HomePage from "./pages/HomePage";
-import ExperiencePage from "./pages/ExperiencePage";
-import ProjectsPage from "./pages/ProjectsPage";
+import Home from "./pages/Home";
+import Archive from "./pages/Archive";
 
 function App() {
   return (
     <Routes>
-      <Route path="/" element={<HomePage />} />
-      <Route path="experience" element={<ExperiencePage />} />
-      <Route path="projects" element={<ProjectsPage />} />
+      <Route path="/" element={<Home />} />
+      <Route path="archives" element={<Archive />} />
     </Routes>
   );
 }
