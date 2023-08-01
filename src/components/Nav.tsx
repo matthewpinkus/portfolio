@@ -16,20 +16,20 @@ import NavItem from "./NavItem";
 
 export default function Nav() {
   return (
-    <div className="max-md:hidden w-1/3 p-16 fixed top-0 left-0 flex z-10 justify-between flex-col h-full">
+    <div className="max-md:hidden w-1/2 sticky top-0 left-0 flex z-10 justify-between flex-col h-full">
       <div className="">
         {/* Info wrapper */}
-        <div className="flex p-6 flex-col">
+        <div className="flex flex-col">
           {/* Icon wrapper */}
-          <div className="w-36 mb-6 p-2 mx-auto">
-            <img src={logo} className="mx-auto" />
+          <div className="w-1/2 mb-6">
+            <img src={logo} />
           </div>
-          <div className="ml-0 flex items-center flex-col">
-            <h1 className="block text-heading_dark font-bold text-2xl text-center">
+          <div className="ml-0 flex flex-col">
+            <h1 className="block text-heading_dark font-bold text-5xl">
               Matthew Pinkus
             </h1>
-            <h2 className="block text-subheading_dark font-italic text-xl text-center">
-              Full Stack Developer
+            <h2 className="block text-subheading_dark font-italic text-3xl">
+              Web Developer
             </h2>
           </div>
         </div>
@@ -58,8 +58,9 @@ export default function Nav() {
           </li>
         </ul>
       </div>
+
       {/* Bottom wrapper for social icons? */}
-      <div id="social-icons" className="flex p-12">
+      <div id="social-icons" className="flex -ml-2 mt-24 h-full">
         <Link
           className="relative hover:text-subheading_dark"
           target="_blank"

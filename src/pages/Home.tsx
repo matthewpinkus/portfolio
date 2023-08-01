@@ -8,11 +8,11 @@ import ScrollToHashElement from "../components/ScrollToHashElement";
 
 export default function HomePage() {
   return (
-    <div className="md:my-24 md:mr-48 m-12 md:ml-[33%] bg-primary_dark">
+    <div className="px-6 py-12 md:px-12 md:py-20 lg:px-24 lg:py-0 flex min-h-screen max-w-screen-xl font-sans justify-center mx-auto bg-primary_dark">
       <ScrollToHashElement />
       <Nav />
-      <div className="flex flex-col md:flex-row">
-        <div className="space-y-8 w-full text-paragraph_dark">
+      <div className="flex md:w-1/2 flex-col md:flex-row">
+        <div className="space-y-8 text-paragraph_dark">
           <About />
 
           <div className="divider" />

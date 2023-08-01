@@ -94,7 +94,7 @@ code {
   }
 
   .tile {
-    @apply text-paragraph_dark_low relative mx-[-1rem] p-4 border-[0.5px] border-[#fff0] rounded-md hover:!opacity-100 [&>a>svg]:hover:block;
+    @apply text-paragraph_dark_low relative p-4 border-[0.5px] border-[#fff0] rounded-md hover:!opacity-100 [&>a>svg]:hover:block;
   }
 
   .mobile-sticky-heading {
