@@ -39,39 +39,15 @@ export default function StickyAboutSection() {
           id="nav-link-wrapper"
           className="flex flex-col mt-12 relative text-paragraph_dark_low"
         >
-          <Link
-            id="nav-link-1"
-            to="/"
-            className={`nav-link ${
-              useLocation().pathname === "/"
-                ? "text-[#ffffff]"
-                : "text-paragraph_dark_low"
-            }`}
-          >
+          <Link to="#about" className="nav-link">
             <NavItem title="Home" SVG={TERMINAL_SVG} />
           </Link>
 
-          <Link
-            id="nav-link-2"
-            to="/experience"
-            className={`nav-link ${
-              useLocation().pathname === "/experience"
-                ? "text-[#ffffff]"
-                : "text-paragraph_dark_low"
-            }`}
-          >
+          <Link to="#experience" className="nav-link">
             <NavItem title="Experience" SVG={BRACKETS_SVG} />
           </Link>
 
-          <Link
-            id="nav-link-3"
-            to="/archives"
-            className={`nav-link ${
-              useLocation().pathname === "/archives"
-                ? "text-[#ffffff]"
-                : "text-paragraph_dark_low"
-            }`}
-          >
+          <Link to="#projects" className="nav-link">
             <NavItem title="Projects" SVG={LAPTOP_SVG} />
           </Link>
         </div>
@@ -79,7 +55,7 @@ export default function StickyAboutSection() {
       {/* Bottom wrapper for social icons? */}
       <div id="social-icons" className="flex p-12">
         <Link
-          className="relative"
+          className="relative hover:text-subheading_dark"
           target="_blank"
           to={"https://www.linkedin.com/in/matthewpinkus/"}
         >

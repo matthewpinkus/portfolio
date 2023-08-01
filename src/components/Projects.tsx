@@ -3,7 +3,7 @@ import ProjectsTile from "./ProjectsTile";
 
 export default function Projects() {
   return (
-    <div className="container">
+    <div id="projects" className="container">
       <h2 className="text-3xl font-bold mb-4 text-paragraph_dark uppercase">
         Projects
       </h2>

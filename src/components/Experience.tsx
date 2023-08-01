@@ -76,9 +76,12 @@ export default function Experience() {
         />
         <div></div>
       </div>
-      <Link to="/experience" className="text-white py-6">
-        <span className="inline-flex items-center uppercase">
-          See all experience <ARROW_SVG className="w-10 h-10 p-2" />{" "}
+      <Link
+        to="/experience"
+        className="text-white py-6 hover:underline hover:underline-offset-2"
+      >
+        <span className="inline-flex items-center uppercase ">
+          See all experience <ARROW_SVG className="w-10 h-10 p-2" />
         </span>
       </Link>
     </div>
