@@ -1,8 +1,36 @@
-import React from "react";
+import React, { useEffect, useRef, useState } from "react";
 
 export default function About() {
+  const [isIntersecting, setIsIntersecting] = useState(false);
+  const anchor: any = useRef(null);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        setIsIntersecting(entry.isIntersecting);
+      },
+      {
+        rootMargin: "-150px",
+      }
+    );
+    observer.observe(anchor.current);
+    return () => observer.disconnect();
+  }, [isIntersecting]);
+
+  useEffect(() => {
+    const anchor = document.getElementById("nav-about");
+    if (isIntersecting) {
+      anchor?.classList.add("text-paragraph_dark");
+    } else {
+      anchor?.classList.remove("text-paragraph_dark");
+    }
+  }, [isIntersecting]);
   return (
-    <div id="about" className="container relative text-paragraph_dark_low">
+    <div
+      ref={anchor}
+      id="about"
+      className="section relative text-paragraph_dark_low"
+    >
       <div className="mobile-sticky-heading">
         <h2 className="text-2xl max-md:ml-4 md:text-3xl font-bold text-paragraph_dark uppercase">
           About

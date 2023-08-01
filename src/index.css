@@ -21,9 +21,13 @@ code {
     @apply p-4 md:p-6;
   }
 
+  .section {
+    @apply p-4;
+  }
+
   /* Nav items */
   .nav-link {
-    @apply w-full h-11 z-[1] transition-colors ease-in-out-quart duration-200 hover:text-[#ffffff];
+    @apply w-full h-10 z-[1] transition-colors ease-in-out-quart duration-200 hover:text-[#ffffff];
   }
 
   .nav-link-content {

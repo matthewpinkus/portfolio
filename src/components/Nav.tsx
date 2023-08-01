@@ -14,10 +14,10 @@ import { ReactComponent as _LINKEDIN_SVG } from "../assets/linkedin-full.svg";
 
 import NavItem from "./NavItem";
 
-export default function StickyAboutSection() {
+export default function Nav() {
   return (
-    <div className="max-md:hidden w-80 fixed top-0 left-0 flex z-10 justify-between flex-col h-full">
-      <div className="p-8">
+    <div className="max-md:hidden w-1/3 p-16 fixed top-0 left-0 flex z-10 justify-between flex-col h-full">
+      <div className="">
         {/* Info wrapper */}
         <div className="flex p-6 flex-col">
           {/* Icon wrapper */}
@@ -35,22 +35,28 @@ export default function StickyAboutSection() {
         </div>
 
         {/* Link wrapper */}
-        <div
+        <ul
           id="nav-link-wrapper"
           className="flex flex-col mt-12 relative text-paragraph_dark_low"
         >
-          <Link to="#about" className="nav-link">
-            <NavItem title="Home" SVG={TERMINAL_SVG} />
-          </Link>
+          <li>
+            <Link id="nav-about" to="#about" className="nav-link">
+              <NavItem title="About" SVG={TERMINAL_SVG} />
+            </Link>
+          </li>
 
-          <Link to="#experience" className="nav-link">
-            <NavItem title="Experience" SVG={BRACKETS_SVG} />
-          </Link>
+          <li>
+            <Link id="nav-experience" to="#experience" className="nav-link">
+              <NavItem title="Experience" SVG={BRACKETS_SVG} />
+            </Link>
+          </li>
 
-          <Link to="#projects" className="nav-link">
-            <NavItem title="Projects" SVG={LAPTOP_SVG} />
-          </Link>
-        </div>
+          <li>
+            <Link id="nav-projects" to="#projects" className="nav-link">
+              <NavItem title="Projects" SVG={LAPTOP_SVG} />
+            </Link>
+          </li>
+        </ul>
       </div>
       {/* Bottom wrapper for social icons? */}
       <div id="social-icons" className="flex p-12">

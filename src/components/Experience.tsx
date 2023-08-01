@@ -1,12 +1,14 @@
 import { useEffect, useRef, useState } from "react";
-import ExperienceTile from "./ExperienceTile";
 import { Link } from "react-router-dom";
+
+import ExperienceTile from "./ExperienceTile";
 
 import { ReactComponent as ARROW_SVG } from "../assets/arrow-right.svg";
 
 export default function Experience() {
   const [isIntersecting, setIsIntersecting] = useState(false);
   const mobileAnimation: any = useRef(null);
+  const anchor: any = useRef(null);
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -18,19 +20,26 @@ export default function Experience() {
       }
     );
     observer.observe(mobileAnimation.current);
+    observer.observe(anchor.current);
     return () => observer.disconnect();
   }, [isIntersecting]);
 
   useEffect(() => {
     if (isIntersecting) {
       mobileAnimation.current.classList.add("[&>*]:max-md:opacity-30");
+      document
+        .getElementById("nav-experience")
+        ?.classList.add("text-paragraph_dark");
     } else {
       mobileAnimation.current.classList.remove("[&>*]:max-md:opacity-30");
+      document
+        .getElementById("nav-experience")
+        ?.classList.remove("text-paragraph_dark");
     }
   }, [isIntersecting]);
 
   return (
-    <div id="experience" className="container">
+    <div ref={anchor} id="experience" className="section">
       <div className="mobile-sticky-heading">
         <h2 className="text-2xl max-md:ml-4 md:text-3xl font-bold text-paragraph_dark uppercase">
           Relevant Experience
@@ -62,8 +71,8 @@ export default function Experience() {
         <ExperienceTile
           title="Full Stack Developer"
           company="Yora Settlements"
-          description="In a solo or two-person team, I created custom AWS OAuth authentication and routing for a single-page Svelte application,
-                      implemented a password recovery system, developed the landing page & crypto chart tables for yora.tech."
+          description="For multiple contracts, I created custom AWS OAuth authentication and routing for a single-page Svelte application,
+                      implemented a password recovery system, developed the landing page & crypto chart tables for yora.tech"
           link="https://yora.tech"
           technology={[
             "HTML",
@@ -71,7 +80,7 @@ export default function Experience() {
             "TypeScript",
             "JavaScript",
             "AWS",
-            "REST API",
+            "REST",
           ]}
         />
         <div></div>
@@ -80,8 +89,8 @@ export default function Experience() {
         to="/experience"
         className="text-white py-6 hover:underline hover:underline-offset-2"
       >
-        <span className="inline-flex items-center uppercase ">
-          See all experience <ARROW_SVG className="w-10 h-10 p-2" />
+        <span className="inline-flex items-center uppercase font-bold">
+          See full resume <ARROW_SVG className="w-10 h-10 p-2" />
         </span>
       </Link>
     </div>

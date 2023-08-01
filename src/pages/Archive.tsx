@@ -1,5 +1,5 @@
 import React from "react";
-import StickyAboutSection from "../components/StickyAboutSection";
+import StickyAboutSection from "../components/Nav";
 
 export default function Archive() {
   return (

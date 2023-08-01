@@ -1,9 +1,33 @@
-import React from "react";
+import React, { useEffect, useRef, useState } from "react";
 import ProjectsTile from "./ProjectsTile";
 
 export default function Projects() {
+  const [isIntersecting, setIsIntersecting] = useState(false);
+  const anchor: any = useRef(null);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        setIsIntersecting(entry.isIntersecting);
+      },
+      {
+        rootMargin: "-150px",
+      }
+    );
+    observer.observe(anchor.current);
+    return () => observer.disconnect();
+  }, [isIntersecting]);
+
+  useEffect(() => {
+    const anchor = document.getElementById("nav-projects");
+    if (isIntersecting) {
+      anchor?.classList.add("text-paragraph_dark");
+    } else {
+      anchor?.classList.remove("text-paragraph_dark");
+    }
+  }, [isIntersecting]);
   return (
-    <div id="projects" className="container">
+    <div ref={anchor} id="projects" className="section">
       <h2 className="text-3xl font-bold mb-4 text-paragraph_dark uppercase">
         Projects
       </h2>
