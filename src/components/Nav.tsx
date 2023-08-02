@@ -16,19 +16,19 @@ import NavItem from "./NavItem";
 
 export default function Nav() {
   return (
-    <div className="max-md:hidden w-1/2 sticky top-0 left-0 flex z-10 justify-between flex-col h-full">
+    <div className="max-md:hidden pt-24 w-1/2 sticky top-0 left-0 flex z-10 justify-between flex-col h-full min-h-screen">
       <div className="">
         {/* Info wrapper */}
         <div className="flex flex-col">
           {/* Icon wrapper */}
-          <div className="w-1/2 mb-6">
+          <div className="w-1/3 mb-6">
             <img src={logo} />
           </div>
           <div className="ml-0 flex flex-col">
-            <h1 className="block text-heading_dark font-bold text-5xl">
+            <h1 className="block text-heading_dark font-bold text-4xl">
               Matthew Pinkus
             </h1>
-            <h2 className="block text-subheading_dark font-italic text-3xl">
+            <h2 className="block text-subheading_dark font-italic text-2xl">
               Web Developer
             </h2>
           </div>
@@ -37,7 +37,7 @@ export default function Nav() {
         {/* Link wrapper */}
         <ul
           id="nav-link-wrapper"
-          className="flex flex-col mt-12 relative text-paragraph_dark_low"
+          className="flex flex-col mt-12 space-y-2 relative text-paragraph_dark_low"
         >
           <li>
             <Link id="nav-about" to="#about" className="nav-link">
@@ -60,7 +60,7 @@ export default function Nav() {
       </div>
 
       {/* Bottom wrapper for social icons? */}
-      <div id="social-icons" className="flex -ml-2 mt-24 h-full">
+      <div id="social-icons" className="flex -ml-2 mt-24 mb-36 h-full">
         <Link
           className="relative hover:text-subheading_dark"
           target="_blank"

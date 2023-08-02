@@ -28,9 +28,11 @@ export default function Projects() {
   }, [isIntersecting]);
   return (
     <div ref={anchor} id="projects" className="section">
-      <h2 className="text-3xl font-bold mb-4 text-paragraph_dark uppercase">
-        Projects
-      </h2>
+      <div className="mobile-sticky-heading">
+        <h2 className="text-2xl max-md:ml-8 font-bold mb-4 text-paragraph_dark uppercase">
+          Projects
+        </h2>
+      </div>
       <div className="space-y-4">
         <ProjectsTile
           title="Discord Bot"

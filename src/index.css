@@ -22,7 +22,7 @@ code {
   }
 
   .section {
-    @apply p-4;
+    @apply md:p-4 px-4;
   }
 
   /* Nav items */

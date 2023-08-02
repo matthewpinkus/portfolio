@@ -41,7 +41,7 @@ export default function Experience() {
   return (
     <div ref={anchor} id="experience" className="section">
       <div className="mobile-sticky-heading">
-        <h2 className="text-2xl max-md:ml-4 md:text-3xl font-bold text-paragraph_dark uppercase">
+        <h2 className="text-2xl max-md:ml-8 md:text-3xl font-bold text-paragraph_dark uppercase">
           Relevant Experience
         </h2>
       </div>
@@ -53,11 +53,8 @@ export default function Experience() {
         <ExperienceTile
           title="Web Developer & IT Consultant"
           company="Masters Agency"
-          description="Masters Agency is a marketing company that offers comprehensive desgins, web development, 
-                      marketing and IT maintenance services for over 30 clients. 
-                      In my time here as the sole developer I have developed and continue to maintain over a half dozen websites on Webflow and WordPress, 
-                      created custom widgets, designs and animations with JS/CSS, liased with clients to understand and meet their requirements and 
-                      deliver them in a timely manner."
+          description="In my time at Masters as the sole developer, I have developed and continue to maintain over a half dozen websites on Webflow and WordPress, 
+                      created custom HTML/CSS/JS widgets, designs and animations, liased with clients to understand and meet their requirements to deliver them in a timely manner."
           link="https://mastersagency.au"
           technology={[
             "Webflow",
@@ -80,15 +77,14 @@ export default function Experience() {
             "TypeScript",
             "JavaScript",
             "AWS",
-            "REST",
+            "REST API",
           ]}
         />
-        <div></div>
       </div>
       <a
         target="_blank"
         href="/resume.pdf"
-        className="text-white py-6 hover:underline hover:underline-offset-2"
+        className="text-white ml-4 py-6 hover:underline hover:underline-offset-2"
       >
         <span className="inline-flex items-center uppercase font-bold">
           See full resume <ARROW_SVG className="w-10 h-10 p-2" />
