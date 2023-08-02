@@ -29,14 +29,14 @@ export default function About() {
     <div
       ref={anchor}
       id="about"
-      className="section relative md:pt-24 text-paragraph_dark_low "
+      className="section relative md:pt-24 text-paragraph_dark_low"
     >
       <div className="mobile-sticky-heading">
         <h2 className="text-2xl max-md:ml-8 md:text-3xl font-bold text-paragraph_dark uppercase">
           About
         </h2>
       </div>
-      <div className="max-md:p-4">
+      <div className="p-4">
         <p className="mb-2">
           Back in '99, I built my first computer at age 4 (with my father acting
           as overseer).

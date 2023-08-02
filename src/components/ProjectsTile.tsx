@@ -25,20 +25,7 @@ export default function ProjectsTile({
           <p className="mb-8">{description}</p>
           <div>
             {technology?.map((title) => {
-              return (
-                <div
-                  className="
-            bg-bg_dark 
-            text-subheading_dark
-            inline-flex
-            p-4
-            mr-4
-            font-bold
-            rounded-full"
-                >
-                  {title}
-                </div>
-              );
+              return <div className="technology-tag">{title}</div>;
             })}
           </div>
         </div>
