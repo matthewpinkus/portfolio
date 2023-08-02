@@ -10,7 +10,7 @@ export default function About() {
         setIsIntersecting(entry.isIntersecting);
       },
       {
-        rootMargin: "-150px",
+        rootMargin: "-250px",
       }
     );
     observer.observe(anchor.current);

@@ -25,10 +25,10 @@ export default function Nav() {
             <img src={logo} />
           </div>
           <div className="ml-0 flex flex-col">
-            <h1 className="block text-heading_dark font-bold text-4xl">
+            <h1 className="block text-4xl text-subheading_dark font-bold">
               Matthew Pinkus
             </h1>
-            <h2 className="block text-subheading_dark font-italic text-2xl">
+            <h2 className="block text-2xl text-heading_dark font-bold font-italic">
               Web Developer
             </h2>
           </div>

@@ -16,7 +16,7 @@ export default function Experience() {
         setIsIntersecting(entry.isIntersecting);
       },
       {
-        rootMargin: "-150px",
+        rootMargin: "-250px",
       }
     );
     observer.observe(mobileAnimation.current);

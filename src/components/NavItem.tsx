@@ -6,7 +6,7 @@ export default function NavItem({ title, SVG }: NavProps) {
     <div>
       <div className="flex items-center [&>svg]:h-10">
         <SVG />
-        <div className="align-middle w-full ml-12 uppercase text-sm">
+        <div className="align-middle w-full ml-12 uppercase text-sm font-bold">
           {title}
         </div>
       </div>
