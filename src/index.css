@@ -34,14 +34,6 @@ code {
     @apply grid-cols-2;
   }
 
-  .social-icon {
-    @apply w-12 h-12 p-2 text-[#fff] [&>svg]:hover:hidden [&>svg]:hover:opacity-0 transition-all ease-in-out-quart duration-500;
-  }
-
-  .social-icon-full {
-    @apply w-12 h-12 p-2 transition-all ease-in-out-quart duration-500;
-  }
-
   .nav-link-divider {
     @apply ml-11 mr-4 border-b-[.5px] border-paragraph_dark border-opacity-30;
   }
@@ -54,10 +46,19 @@ code {
     @apply w-6 border-b-[.5px] border-paragraph_dark border-opacity-80;
   }
 
+  .social-icon {
+    @apply w-12 h-12 p-2 text-[#fff] [&>svg]:hover:hidden [&>svg]:hover:opacity-0 transition-all ease-in-out-quart duration-500;
+  }
+
+  .social-icon-full {
+    @apply w-12 h-12 p-2 transition-all ease-in-out-quart duration-500;
+  }
+
   .divider {
     @apply border-b-[.5px] border-paragraph_dark border-opacity-10;
   }
 
+  /* Typography */
   .h2 {
     @apply text-2xl mb-2 text-paragraph_dark;
   }
@@ -90,7 +91,8 @@ code {
             mr-4
             mb-4
             font-bold
-            rounded-full;
+            rounded-full
+            shadow-lg;
   }
 
   .tile {
