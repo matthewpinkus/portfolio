@@ -39,13 +39,15 @@ export default function Projects() {
           technology={["TypeScript", "JavaScript"]}
           description="An all purpose bot for my personal discord community."
           link="https://github.com/kaildrai/discord-bot"
+          img=""
         />
 
         <ProjectsTile
-          title="Title"
-          technology={["TypeScript", "JavaScript"]}
+          title="This Website"
+          technology={["React", "TypeScript", "JavaScript", "TailwindCSS"]}
           description="Description"
-          link="projects"
+          link="https://github.com/kaildrai/portfolio"
+          img="./src/assets/portfolio-project.png"
         />
       </div>
     </div>

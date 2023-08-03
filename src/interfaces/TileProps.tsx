@@ -5,4 +5,5 @@ export interface TileProps {
   technology?: string[] | undefined;
   link: string;
   ref?: HTMLDivElement;
+  img?: string;
 }
