@@ -1,5 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
 import ProjectsTile from "./ProjectsTile";
+import Projects_JSON from "../obj/Projects.json";
 
 export default function Projects() {
   const [isIntersecting, setIsIntersecting] = useState(false);
@@ -34,21 +35,18 @@ export default function Projects() {
         </h2>
       </div>
       <div className="space-y-4">
-        <ProjectsTile
-          title="Discord Bot"
-          technology={["TypeScript", "JavaScript"]}
-          description="An all purpose bot for my personal discord community."
-          link="https://github.com/kaildrai/discord-bot"
-          img=""
-        />
-
-        <ProjectsTile
-          title="This Website"
-          technology={["React", "TypeScript", "JavaScript", "TailwindCSS"]}
-          description="Description"
-          link="https://github.com/kaildrai/portfolio"
-          img="./src/assets/portfolio-project.png"
-        />
+        {Projects_JSON.map((json) => {
+          return (
+            <ProjectsTile
+              title={json.title}
+              description={json.description}
+              link={json.link}
+              technology={json.technologies.map((tech) => {
+                return tech;
+              })}
+            />
+          );
+        })}
       </div>
     </div>
   );

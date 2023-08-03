@@ -73,7 +73,7 @@ code {
   }
 
   .border-slide-in {
-    @apply bg-[#1cbfaa0a] drop-shadow-lg !border-subheading_dark !opacity-100 [&>a>svg]:block;
+    @apply bg-[#1cbfaa0a] drop-shadow-lg border-opacity-30 !border-subheading_dark !opacity-100 [&>a>svg]:block;
   }
 
   .hover-border {
