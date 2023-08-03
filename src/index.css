@@ -67,6 +67,10 @@ code {
     @apply text-base mb-4 font-bold  text-paragraph_dark;
   }
 
+  .link {
+    @apply text-paragraph_dark hover:text-subheading_dark font-bold;
+  }
+
   /* Animations */
   .quart-in-out {
     @apply transition-all ease-in-out-quart duration-300;
@@ -78,6 +82,10 @@ code {
 
   .hover-border {
     @apply hover:bg-[#1cbfaa0a] hover:drop-shadow-lg hover:border-subheading_dark hover:border-opacity-30;
+  }
+
+  .link-hover {
+    @apply border-b border-b-[#fff0] duration-300 transition-all hover:border-b-subheading_dark;
   }
 
   /* Specifics */

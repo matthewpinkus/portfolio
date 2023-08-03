@@ -5,6 +5,7 @@ import Experience from "../components/Experience";
 import Projects from "../components/Projects";
 import Technologies from "../components/Technologies";
 import ScrollToHashElement from "../components/ScrollToHashElement";
+import Footer from "../components/Footer";
 
 export default function HomePage() {
   const [mousePos, setMousePos] = useState({ x: 0, y: 0 });
@@ -44,7 +45,7 @@ export default function HomePage() {
 
           <div className="divider" />
 
-          <Technologies />
+          <Footer />
         </div>
       </div>
     </div>

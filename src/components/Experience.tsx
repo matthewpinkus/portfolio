@@ -65,9 +65,9 @@ export default function Experience() {
           );
         })}
       </div>
-      <div className="mt-4 ml-4 z-50 inline-block [&>a>svg]:hover:ml-4">
+      <div className="mt-4 ml-4 inline-block [&>a>svg]:hover:ml-4">
         <a target="_blank" href="/resume.pdf" className="inline-flex">
-          <span className="flex align-center items-center uppercase font-bold border-b border-b-[#fff0] duration-300 transition-all hover:border-b-subheading_dark">
+          <span className="flex align-center items-center uppercase font-bold link-hover">
             See Full Resume
           </span>
           <ARROW_SVG className="w-8 p-2 duration-300 transition-all hover:translate-x-4" />
