@@ -8,7 +8,6 @@ import ScrollToHashElement from "../components/ScrollToHashElement";
 
 export default function HomePage() {
   const [mousePos, setMousePos] = useState({ x: 0, y: 0 });
-  const mouseAnimation = useRef(null);
 
   useEffect(() => {
     const handleMouseMove = (event: any) => {

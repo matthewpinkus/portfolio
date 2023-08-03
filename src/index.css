@@ -60,11 +60,11 @@ code {
 
   /* Typography */
   .h2 {
-    @apply text-2xl mb-2 text-paragraph_dark;
+    @apply text-2xl mb-2 font-bold text-paragraph_dark;
   }
 
   .h3 {
-    @apply text-base mb-4 font-bold;
+    @apply text-base mb-4 font-bold  text-paragraph_dark;
   }
 
   /* Animations */
@@ -73,11 +73,11 @@ code {
   }
 
   .border-slide-in {
-    @apply bg-[#00000005] !border-subheading_dark !opacity-100 [&>a>svg]:block;
+    @apply bg-[#1cbfaa0a] drop-shadow-lg !border-subheading_dark !opacity-100 [&>a>svg]:block;
   }
 
   .hover-border {
-    @apply hover:bg-[#00000005] hover:border-subheading_dark;
+    @apply hover:bg-[#1cbfaa0a] hover:drop-shadow-lg hover:border-subheading_dark hover:border-opacity-30;
   }
 
   /* Specifics */

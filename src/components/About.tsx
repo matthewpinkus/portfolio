@@ -29,7 +29,7 @@ export default function About() {
     <div
       ref={anchor}
       id="about"
-      className="section relative md:pt-24 text-paragraph_dark_low"
+      className="section relative md:pt-24 pt-6 text-paragraph_dark_low"
     >
       <div className="mobile-sticky-heading">
         <h2 className="text-2xl max-md:ml-8 md:text-3xl font-bold text-paragraph_dark uppercase">
