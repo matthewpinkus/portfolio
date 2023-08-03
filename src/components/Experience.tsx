@@ -45,6 +45,7 @@ export default function Experience() {
           Relevant Experience
         </h2>
       </div>
+
       <div
         ref={mobileAnimation}
         id="work-experience"
@@ -64,8 +65,8 @@ export default function Experience() {
           );
         })}
       </div>
-      <div className="mt-4 ml-4 inline-block [&>a>svg]:hover:ml-4 ">
-        <a target="_blank" href="/resume.pdf" className="inline-flex ">
+      <div className="mt-4 ml-4 z-50 inline-block [&>a>svg]:hover:ml-4">
+        <a target="_blank" href="/resume.pdf" className="inline-flex">
           <span className="flex align-center items-center uppercase font-bold border-b border-b-[#fff0] duration-300 transition-all hover:border-b-subheading_dark">
             See Full Resume
           </span>

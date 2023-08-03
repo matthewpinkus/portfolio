@@ -21,13 +21,13 @@ export default function HomePage() {
     };
   }, []);
   return (
-    <div className="px-6 md:px-12 lg:px-24 lg:py-0 flex min-h-screen max-w-screen-xl font-sans justify-center mx-auto bg-primary_dark">
+    <div className="px-6 md:px-12 lg:px-24 lg:py-0 flex min-h-screen max-w-screen-xl font-sans justify-center mx-auto">
       <ScrollToHashElement />
       <div
         style={{
           background: `radial-gradient(600px at ${mousePos.x}px ${mousePos.y}px, rgba(29, 78, 216, 0.15), transparent 80%)`,
         }}
-        className={"max-md:hidden inset-0 fixed transition duration-300"}
+        className={"max-md:hidden inset-0 -z-30 fixed transition duration-300"}
       />
       <Nav />
       <div className="flex md:w-1/2 flex-col md:flex-row">
