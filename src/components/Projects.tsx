@@ -2,6 +2,9 @@ import React, { useEffect, useRef, useState } from "react";
 import ProjectsTile from "./ProjectsTile";
 import Projects_JSON from "../obj/Projects.json";
 
+import { ReactComponent as ARROW_SVG } from "../assets/arrow-right.svg";
+import { Link } from "react-router-dom";
+
 export default function Projects() {
   const [isIntersecting, setIsIntersecting] = useState(false);
   const anchor: any = useRef(null);
@@ -47,6 +50,14 @@ export default function Projects() {
             />
           );
         })}
+      </div>
+      <div className="mt-4 ml-4 inline-block [&>a>svg]:hover:ml-4">
+        <Link to="/archives" className="inline-flex">
+          <span className="flex align-center items-center uppercase font-bold link-hover">
+            View Project Archive
+          </span>
+          <ARROW_SVG className="w-8 p-2 duration-300 transition-all" />
+        </Link>
       </div>
     </div>
   );

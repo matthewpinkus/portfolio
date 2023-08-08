@@ -1,10 +1,9 @@
 [
     {
-        
         "id": 1,
         "company": "Masters Agency",
         "title": "Web Developer & IT Consultant",
-        "description": "In my time at Masters as the sole developer, I have developed and continue to maintain over a half dozen websites on Webflow and WordPress, created custom HTML/CSS/JS widgets, designs and animations, liased with clients to understand and meet their requirements to deliver them in a timely manner.",
+        "description": "In my time at Masters as the sole developer, I have developed and continue to maintain over a half dozen websites on Webflow and WordPress, used HTML/CSS/JS for custom designs and animations and liased with clients as a ",
         "link": "https://mastersagency.au",
         "technologies": [
             "Webflow",
@@ -12,7 +11,9 @@
             "HTML",
             "CSS",
             "JavaScript",
-            "AWS"
+            "AWS",
+            "Zapier API",
+            "Stripe API"
         ]
     },
     {
@@ -24,7 +25,6 @@
         "technologies": [
             "HTML",
             "SCSS",
-            "TypeScript",
             "JavaScript",
             "AWS",
             "REST API"
