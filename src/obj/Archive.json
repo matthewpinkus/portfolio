@@ -30,7 +30,7 @@
         "title": "Masters Agency Website",
         "link": "https://www.mastersagency.au",
         "technologies": [
-            "Webflow", "CSS", "JavaScript"
+            "Webflow", "CSS", "JavaScript", "AWS"
         ]
     },
     {
@@ -50,7 +50,7 @@
         "title": "DeGen Pass + Front End",
         "link": "https://www.bondilines.com",
         "technologies": [
-            "Webflow", "CSS", "JavaScript", "MailChimp", "Stripe", "Klayvio"
+            "Webflow", "CSS", "JavaScript", "MailChimp", "Stripe API", "Klayvio"
         ]
     },
     {
@@ -77,10 +77,20 @@
         "id": 8,
         "year": "2023",
         "company": "Masters Agency",
-        "title": "Right Start Pet Food",
+        "title": "Right Start Pet Food Website",
         "link": "https://rightstartpetfood.au",
         "technologies": [
             "Shopify", "Liquid", "CSS", "JavaScript"
+        ]
+    },
+    {
+        "id": 9,
+        "year": "2023",
+        "company": "Masters Agency",
+        "title": "LOUMAC Website",
+        "link": "https://loumac.au",
+        "technologies": [
+            "Webflow", "CSS", "JavaScript"
         ]
     }
 ]

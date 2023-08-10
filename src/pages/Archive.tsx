@@ -31,7 +31,7 @@ export default function Archive() {
         }}
         className={"max-md:hidden inset-0 -z-30 fixed transition duration-300"}
       />
-      <div className="flex md:w-full flex-col md:flex-col">
+      <div className="flex w-full flex-col md:flex-col">
         <div className="section relative md:pt-24 pt-6 text-paragraph_dark">
           <div className="inline-block [&>a>svg]:hover:-translate-x-4">
             <Link to="/" className="inline-flex">
@@ -50,7 +50,7 @@ export default function Archive() {
                 <th>Project</th>
                 <th className="max-md:hidden">Made for</th>
                 <th className="max-md:hidden">Technologies</th>
-                <th>Link</th>
+                <th className="hidden sm:block ">Link</th>
               </tr>
             </thead>
             <tbody>
@@ -58,7 +58,13 @@ export default function Archive() {
                 return (
                   <tr className="align-center [&>td]:p-2">
                     <td>{json.year}</td>
-                    <td className="font-bold">{json.title}</td>
+                    <td className="font-bold max-sm:hidden">{json.title}</td>
+
+                    <td className="font-bold sm:hidden link">
+                      <a href={json.link} target="_blank">
+                        {json.title}
+                      </a>
+                    </td>
                     <td className="text-paragraph_dark_low text-sm max-md:hidden">
                       {json.company}
                     </td>
@@ -69,7 +75,7 @@ export default function Archive() {
                         );
                       })}
                     </td>
-                    <td>
+                    <td className="hidden sm:block">
                       <a
                         target="_blank"
                         className="link font-normal text-paragraph_dark_low text-sm"

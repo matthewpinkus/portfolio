@@ -16,15 +16,15 @@ import NavItem from "./NavItem";
 
 export default function Nav() {
   return (
-    <div className="max-md:hidden pt-24 w-1/2 sticky top-0 left-0 flex z-10 justify-between flex-col h-full min-h-screen">
-      <div className="">
+    <div className="section md:pt-24 md:w-1/2 md:sticky md:top-0 md:left-0 md:flex z-10 md:justify-between md:flex-col md:h-full md:min-h-screen">
+      <div className="max-md:p-4">
         {/* Info wrapper */}
         <div className="flex flex-col">
           {/* Icon wrapper */}
-          <div className="w-1/3 mb-6">
+          <div className="max-md:hidden w-1/3 mb-6">
             <img src={logo} />
           </div>
-          <div className="ml-0 flex flex-col">
+          <div className="max-md:mt-8 ml-0 flex flex-col">
             <h1 className="block text-4xl text-subheading_dark font-bold">
               Matthew Pinkus
             </h1>
@@ -37,7 +37,7 @@ export default function Nav() {
         {/* Link wrapper */}
         <ul
           id="nav-link-wrapper"
-          className="flex flex-col mt-12 space-y-2 relative text-paragraph_dark_low"
+          className="max-md:hidden flex flex-col mt-12 space-y-2 relative text-paragraph_dark_low"
         >
           <li>
             <Link id="nav-about" to="#about" className="nav-link">
@@ -60,7 +60,10 @@ export default function Nav() {
       </div>
 
       {/* Bottom wrapper for social icons? */}
-      <div id="social-icons" className="flex -ml-2 mt-24 mb-36 h-full">
+      <div
+        id="social-icons"
+        className="max-md:p-4 flex -ml-2 md:mt-24 md:mb-36 md:h-full"
+      >
         <Link
           className="relative hover:text-subheading_dark"
           target="_blank"

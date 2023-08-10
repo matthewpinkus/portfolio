@@ -23,7 +23,7 @@ export default function HomePage() {
     };
   }, []);
   return (
-    <div className="px-6 md:px-12 lg:px-24 lg:py-0 flex min-h-screen max-w-screen-xl font-sans justify-center mx-auto">
+    <div className="px-6 md:px-12 lg:px-24 lg:py-0 flex flex-col md:flex-row min-h-screen max-w-screen-xl font-sans justify-center mx-auto">
       <ScrollToHashElement />
       <div
         style={{
