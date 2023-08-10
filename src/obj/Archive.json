@@ -2,9 +2,9 @@
     {
         "id": 1,
         "year": "2022",
-        "company": "",
+        "company": "Self",
         "title": "Discord Bot",
-        "link": "",
+        "link": "https://www.github.com/kaildrai/discord-bot",
         "technologies": [
             "Discord.js API",
             "TypeScript",
@@ -15,13 +15,72 @@
     {
         "id": 2,
         "year": "2023",
-        "company": "",
+        "company": "Self",
         "title": "Portfolio Website",
-        "link": "",
+        "link": "http://kaildrai.github.io/portfolio/",
         "technologies": [
             "React",
             "TailwindCSS",
             "TypeScript"
-    ]}
-        
+    ]},
+    {
+        "id": 3,
+        "year": "2023",
+        "company": "Masters Agency",
+        "title": "Masters Agency Website",
+        "link": "https://www.mastersagency.au",
+        "technologies": [
+            "Webflow", "CSS", "JavaScript"
+        ]
+    },
+    {
+        "id": 4,
+        "year": "2022",
+        "company": "Masters Agency",
+        "title": "C4i Solutions Website",
+        "link": "https://www.c4isolutions.com.au",
+        "technologies": [
+            "WordPress", "CSS", "JavaScript", "DNS Config"
+        ]
+    },
+    {
+        "id": 5,
+        "year": "2023",
+        "company": "Masters Agency",
+        "title": "DeGen Pass + Front End",
+        "link": "https://www.bondilines.com",
+        "technologies": [
+            "Webflow", "CSS", "JavaScript", "MailChimp", "Stripe", "Klayvio"
+        ]
+    },
+    {
+        "id": 6,
+        "year": "2022",
+        "company": "Yora Settlements",
+        "title": "Buzz & Feed SPA",
+        "link": "https://yora.tech",
+        "technologies": [
+            "AWS", "SCSS", "TypeScript", "REST API"
+        ]
+    },
+    {
+        "id": 7,
+        "year": "2022",
+        "company": "Self",
+        "title": "NeoVim Dotfiles",
+        "link": "https://github.com/kaildrai/dotfiles",
+        "technologies": [
+            "NeoVim", "Vim", "CLI", "Linux", "LUA"
+        ]
+    },
+    {
+        "id": 8,
+        "year": "2023",
+        "company": "Masters Agency",
+        "title": "Right Start Pet Food",
+        "link": "https://rightstartpetfood.au",
+        "technologies": [
+            "Shopify", "Liquid", "CSS", "JavaScript"
+        ]
+    }
 ]

@@ -1,12 +1,36 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import StickyAboutSection from "../components/Nav";
 import { Link } from "react-router-dom";
 import { ReactComponent as ARROW_SVG } from "../assets/arrow-right.svg";
 import Archive_JSON from "../obj/Archive.json";
 
 export default function Archive() {
+  document.title = "Matthew Pinkus | Archives";
+
+  const [mousePos, setMousePos] = useState({ x: 0, y: 0 });
+
+  useEffect(() => {
+    const handleMouseMove = (event: any) => {
+      setMousePos({ x: event.clientX, y: event.clientY });
+    };
+
+    window.addEventListener("mousemove", handleMouseMove);
+
+    return () => {
+      window.removeEventListener("mousemove", handleMouseMove);
+    };
+  }, []);
+
+  // TODO: Sort Archive by year.
+
   return (
     <div className="px-6 md:px-12 lg:px-24 lg:py-0 flex min-h-screen max-w-screen-xl font-sans justify-center mx-auto">
+      <div
+        style={{
+          background: `radial-gradient(600px at ${mousePos.x}px ${mousePos.y}px, rgba(29, 78, 216, 0.15), transparent 80%)`,
+        }}
+        className={"max-md:hidden inset-0 -z-30 fixed transition duration-300"}
+      />
       <div className="flex md:w-full flex-col md:flex-col">
         <div className="section relative md:pt-24 pt-6 text-paragraph_dark">
           <div className="inline-block [&>a>svg]:hover:-translate-x-4">
@@ -17,33 +41,49 @@ export default function Archive() {
               </span>
             </Link>
           </div>
-          <h2 className="text-2xl max-md:ml-8 font-bold mb-4  uppercase">
-            Archives
-          </h2>
+          <h2 className="text-4xl font-bold mb-12 uppercase">All Projects</h2>
 
-          <table className="border-collapse w-full [&>*>th]:text-left">
-            <tr>
-              <th aria-sort="descending">Year</th>
-              <th>Project</th>
-              <th>Company</th>
-              <th>Technologies</th>
-              <th>Link</th>
-            </tr>
-            {Archive_JSON.map((json) => {
-              return (
-                <tr>
-                  <td>{json.year}</td>
-                  <td>{json.title}</td>
-                  <td>{json.company}</td>
-                  <td>
-                    {json.technologies.map((tech) => {
-                      return <div className="technology-tag">{tech}</div>;
-                    })}
-                  </td>
-                  <td>{json.link}</td>
-                </tr>
-              );
-            })}
+          <table className="table">
+            <thead>
+              <tr className="[&>th]:pb-4">
+                <th>Year</th>
+                <th>Project</th>
+                <th className="max-md:hidden">Made for</th>
+                <th className="max-md:hidden">Technologies</th>
+                <th>Link</th>
+              </tr>
+            </thead>
+            <tbody>
+              {Archive_JSON.map((json) => {
+                return (
+                  <tr className="align-center [&>td]:p-2">
+                    <td>{json.year}</td>
+                    <td className="font-bold">{json.title}</td>
+                    <td className="text-paragraph_dark_low text-sm max-md:hidden">
+                      {json.company}
+                    </td>
+                    <td className="max-md:hidden">
+                      {json.technologies.map((tech) => {
+                        return (
+                          <div className="technology-tag mb-1">{tech}</div>
+                        );
+                      })}
+                    </td>
+                    <td>
+                      <a
+                        target="_blank"
+                        className="link font-normal text-paragraph_dark_low text-sm"
+                        href={json.link}
+                      >
+                        {json.link.split("//www.")[1]
+                          ? json.link.split("//www.")[1]
+                          : json.link.split("//")[1]}
+                      </a>
+                    </td>
+                  </tr>
+                );
+              })}
+            </tbody>
           </table>
         </div>
       </div>

@@ -6,8 +6,8 @@ export const theme = {
     primary_dark_low: "#0D1B2A88",
     secondary_dark: "#415A77",
     bg_dark: "#1C1D21",
-    paragraph_dark_low: "#EEE1EDAA",
     paragraph_dark: "#EEE1ED",
+    paragraph_dark_low: "#EEE1EDAA",
     heading_dark: "#7D5BA6",
     subheading_dark: "#129490",
     subheading_dark_low: "#12949033"

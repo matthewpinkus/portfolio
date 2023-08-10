@@ -33,7 +33,7 @@ export default function Projects() {
   return (
     <div ref={anchor} id="projects" className="section">
       <div className="mobile-sticky-heading">
-        <h2 className="text-2xl max-md:ml-8 font-bold mb-4 text-paragraph_dark uppercase">
+        <h2 className="text-2xl max-md:ml-8 md:text-3xl font-bold text-paragraph_dark uppercase">
           Projects
         </h2>
       </div>

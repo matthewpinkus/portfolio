@@ -8,6 +8,7 @@ import Projects from "../components/Projects";
 import Footer from "../components/Footer";
 
 export default function HomePage() {
+  document.title = "Matthew Pinkus";
   const [mousePos, setMousePos] = useState({ x: 0, y: 0 });
 
   useEffect(() => {

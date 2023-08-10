@@ -90,13 +90,13 @@ code {
 
   /* Specifics */
   .technology-tag {
-    @apply bg-bg_dark 
+    @apply bg-subheading_dark_low
           text-subheading_dark
             inline-flex
             text-xs
             px-4
             py-1
-            mr-4
+            mr-2
             mb-4
             font-bold
             rounded-full
@@ -109,5 +109,9 @@ code {
 
   .mobile-sticky-heading {
     @apply mb-4 max-md:sticky max-md:top-0 max-md:-ml-8 max-md:pl-4 max-md:py-3 max-md:backdrop-blur max-md:w-screen max-md:z-10 max-md:items-center max-md:flex max-md:bg-primary_dark_low;
+  }
+
+  .table {
+    @apply border-collapse w-full text-left [&>*>*]:border-b [&>*>*]:border-b-[rgba(203,213,225,.1)];
   }
 }
