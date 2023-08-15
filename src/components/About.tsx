@@ -40,8 +40,8 @@ export default function About() {
         </div>
         <div className="p-4">
           <p className="mb-2">
-            Back in '99, I built my first computer at age 4 (with my father
-            acting as overseer).
+            Back in '99, I built my first computer at age 4 with my dad watching
+            over me.
           </p>
 
           <p className="mb-2">

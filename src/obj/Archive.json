@@ -1,7 +1,7 @@
 [
     {
         "id": 1,
-        "year": "2022",
+        "year": 2022,
         "company": "Self",
         "title": "Discord Bot",
         "link": "https://www.github.com/kaildrai/discord-bot",
@@ -14,10 +14,10 @@
     },
     {
         "id": 2,
-        "year": "2023",
+        "year": 2023,
         "company": "Self",
         "title": "Portfolio Website",
-        "link": "http://kaildrai.github.io/portfolio/",
+        "link": "http://www.github.com/kaildrai/portfolio/",
         "technologies": [
             "React",
             "TailwindCSS",
@@ -25,7 +25,7 @@
     ]},
     {
         "id": 3,
-        "year": "2023",
+        "year": 2023,
         "company": "Masters Agency",
         "title": "Masters Agency Website",
         "link": "https://www.mastersagency.au",
@@ -35,7 +35,7 @@
     },
     {
         "id": 4,
-        "year": "2022",
+        "year": 2022,
         "company": "Masters Agency",
         "title": "C4i Solutions Website",
         "link": "https://www.c4isolutions.com.au",
@@ -45,7 +45,7 @@
     },
     {
         "id": 5,
-        "year": "2023",
+        "year": 2023,
         "company": "Masters Agency",
         "title": "DeGen Pass + Front End",
         "link": "https://www.bondilines.com",
@@ -55,7 +55,7 @@
     },
     {
         "id": 6,
-        "year": "2022",
+        "year": 2022,
         "company": "Yora Settlements",
         "title": "Buzz & Feed SPA",
         "link": "https://yora.tech",
@@ -65,7 +65,7 @@
     },
     {
         "id": 7,
-        "year": "2022",
+        "year": 2022,
         "company": "Self",
         "title": "NeoVim Dotfiles",
         "link": "https://github.com/kaildrai/dotfiles",
@@ -75,17 +75,17 @@
     },
     {
         "id": 8,
-        "year": "2023",
+        "year": 2023,
         "company": "Masters Agency",
         "title": "Right Start Pet Food Website",
         "link": "https://rightstartpetfood.au",
         "technologies": [
-            "Shopify", "Liquid", "CSS", "JavaScript"
+            "Shopify", "Shopify SDK", "Liquid", "CSS", "JavaScript"
         ]
     },
     {
         "id": 9,
-        "year": "2023",
+        "year": 2023,
         "company": "Masters Agency",
         "title": "LOUMAC Website",
         "link": "https://loumac.au",
