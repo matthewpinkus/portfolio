@@ -21,7 +21,26 @@ export default function Archive() {
     };
   }, []);
 
-  // TODO: Sort Archive by year.
+  const [sortedData, setSortedData] = useState([...Archive_JSON]);
+  const [sortOrder, setSortOrder] = useState<"asc" | "desc">("asc");
+  const [iconDirection, setIconDirection] = useState<
+    "sort-up" | "sort-down" | "default"
+  >("default");
+
+  const sortByYear = () => {
+    const sorted = [...sortedData].sort((a, b) => {
+      if (sortOrder === "asc") {
+        return a.year - b.year;
+      } else if (sortOrder === "desc") {
+        return b.year - a.year;
+      } else {
+        return a.year;
+      }
+    });
+
+    setSortedData(sorted);
+    setSortOrder(sortOrder === "asc" ? "desc" : "asc");
+  };
 
   return (
     <div className="px-6 md:px-12 lg:px-24 lg:py-0 flex min-h-screen max-w-screen-xl font-sans justify-center mx-auto">
@@ -46,7 +65,12 @@ export default function Archive() {
           <table className="table">
             <thead>
               <tr className="[&>th]:pb-4">
-                <th>Year</th>
+                <th>
+                  <button className="mr-1" onClick={sortByYear}>
+                    <i className={`fas fa-${iconDirection}`}></i>
+                  </button>
+                  Year
+                </th>
                 <th>Project</th>
                 <th className="max-md:hidden">Made for</th>
                 <th className="max-md:hidden">Technologies</th>
@@ -54,7 +78,7 @@ export default function Archive() {
               </tr>
             </thead>
             <tbody>
-              {Archive_JSON.map((json) => {
+              {sortedData.map((json) => {
                 return (
                   <tr className="align-center [&>td]:p-2">
                     <td>{json.year}</td>
