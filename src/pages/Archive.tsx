@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import StickyAboutSection from "../components/Nav";
 import { Link } from "react-router-dom";
 import { ReactComponent as ARROW_SVG } from "../assets/arrow-right.svg";
 import Archive_JSON from "../obj/Archive.json";
@@ -22,25 +21,18 @@ export default function Archive() {
   }, []);
 
   const [sortedData, setSortedData] = useState([...Archive_JSON]);
-  const [sortOrder, setSortOrder] = useState<"asc" | "desc">("asc");
-  const [iconDirection, setIconDirection] = useState<
-    "sort-up" | "sort-down" | "default"
-  >("default");
 
-  const sortByYear = () => {
-    const sorted = [...sortedData].sort((a, b) => {
-      if (sortOrder === "asc") {
-        return a.year - b.year;
-      } else if (sortOrder === "desc") {
-        return b.year - a.year;
-      } else {
-        return a.year;
-      }
+  useEffect(() => {
+    const sorted = [...sortedData].sort((a: any, b: any) => {
+      a = a.date.split("-");
+      b = b.date.split("-");
+      return (
+        new Date(b[1], b[0], 1).valueOf() - new Date(a[1], a[0], 1).valueOf()
+      );
     });
 
     setSortedData(sorted);
-    setSortOrder(sortOrder === "asc" ? "desc" : "asc");
-  };
+  });
 
   return (
     <div className="px-6 md:px-12 lg:px-24 lg:py-0 flex min-h-screen max-w-screen-xl font-sans justify-center mx-auto">
@@ -65,12 +57,7 @@ export default function Archive() {
           <table className="table">
             <thead>
               <tr className="[&>th]:pb-4">
-                <th>
-                  <button className="mr-1" onClick={sortByYear}>
-                    <i className={`fas fa-${iconDirection}`}></i>
-                  </button>
-                  Year
-                </th>
+                <th>Year</th>
                 <th>Project</th>
                 <th className="max-md:hidden">Made for</th>
                 <th className="max-md:hidden">Technologies</th>
@@ -81,7 +68,7 @@ export default function Archive() {
               {sortedData.map((json) => {
                 return (
                   <tr className="align-center [&>td]:p-2">
-                    <td>{json.year}</td>
+                    <td>{json.date.split("-")[1]}</td>
                     <td className="font-bold max-sm:hidden">{json.title}</td>
 
                     <td className="font-bold sm:hidden link">
