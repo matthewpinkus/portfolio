@@ -30,7 +30,7 @@ export default function Archive() {
     });
 
     setSortedData(sorted);
-  });
+  }, []);
 
   return (
     <div className="px-6 md:px-12 lg:px-24 lg:py-0 flex min-h-screen max-w-screen-xl font-sans justify-center mx-auto">
@@ -44,7 +44,7 @@ export default function Archive() {
       <div className="flex w-full flex-col md:flex-col">
         <div className="section relative md:pt-24 pt-6 text-paragraph_dark">
           <div className="inline-block [&>a>svg]:hover:-translate-x-4">
-            <Link to="/" className="inline-flex">
+            <Link to="/portfolio" className="inline-flex">
               <ARROW_SVG className="rotate-180 w-8 p-2 duration-300 transition-all" />
               <span className="flex align-center items-center uppercase font-bold link-hover">
                 Matthew Pinkus
@@ -68,7 +68,7 @@ export default function Archive() {
             <tbody>
               {sortedData.map((json) => {
                 return (
-                  <tr className="align-center [&>td]:p-2">
+                  <tr key={json.id} className="align-center [&>td]:p-2">
                     <td>{json.date.split("-")[1]}</td>
                     <td className="font-bold max-sm:hidden">{json.title}</td>
 

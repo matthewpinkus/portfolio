@@ -68,7 +68,7 @@
     "company": "Masters Agency",
     "title": "Right Start Pet Food Website",
     "link": "https://rightstartpetfood.au",
-    "technologies": ["Shopify", "Shopify SDK", "Liquid", "CSS", "JavaScript"]
+    "technologies": ["Shopify", "Liquid", "React", "CSS", "JavaScript"]
   },
   {
     "id": 9,

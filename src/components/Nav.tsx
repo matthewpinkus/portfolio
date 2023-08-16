@@ -1,6 +1,6 @@
 import React from "react";
 import logo from "../assets/matthew-icon.png";
-import { Link, useLocation } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 import { ReactComponent as BRACKETS_SVG } from "../assets/brackets.svg";
 import { ReactComponent as TERMINAL_SVG } from "../assets/terminal.svg";

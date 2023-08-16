@@ -1,4 +1,5 @@
 export interface TileProps {
+  id: number;
   title: string;
   company?: string | undefined;
   description: string;
