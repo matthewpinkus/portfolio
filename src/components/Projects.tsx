@@ -29,7 +29,8 @@ export default function Projects() {
     } else {
       anchor?.classList.remove("text-paragraph_dark");
     }
-  }, [isIntersecting]);
+  }, []);
+
   return (
     <div ref={anchor} id="projects" className="section">
       <div className="mobile-sticky-heading">

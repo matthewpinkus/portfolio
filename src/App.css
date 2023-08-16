@@ -36,3 +36,7 @@
   display: hidden;
   opacity: 0;
 }
+
+#masters-link:hover {
+  cursor: url("/src/assets/masters-logo.svg");
+}

@@ -10,7 +10,8 @@ export const theme = {
     paragraph_dark_low: "#EEE1EDAA",
     heading_dark: "#7D5BA6",
     subheading_dark: "#129490",
-    subheading_dark_low: "#12949033"
+    subheading_dark_low: "#1294902f",
+    subheading_dark_high: "#00cfa1"
   },
   extend: {
     animation: {

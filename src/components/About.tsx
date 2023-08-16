@@ -71,9 +71,9 @@ export default function About() {
             </a>
             , I have taken up the mantle of Web Developer.
           </p>
-          <p className="">
+          <p>
             Professionally, I build and maintain websites for our clients at
-            <a href="www.mastersagency.au" className="link">
+            <a id="masters-link" href="www.mastersagency.au" className="link">
               {" "}
               Masters Agency
             </a>

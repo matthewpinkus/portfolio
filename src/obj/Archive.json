@@ -1,96 +1,89 @@
 [
-    {
-        "id": 1,
-        "date": "3-2022",
-        "company": "Self",
-        "title": "Discord Bot",
-        "link": "https://www.github.com/kaildrai/discord-bot",
-        "technologies": [
-            "Discord.js API",
-            "TypeScript",
-            "JavaScript",
-            "OpenAI"
-        ]
-    },
-    {
-        "id": 2,
-        "date": "5-2023",
-        "company": "Self",
-        "title": "Portfolio Website",
-        "link": "http://www.github.com/kaildrai/portfolio/",
-        "technologies": [
-            "React",
-            "TailwindCSS",
-            "TypeScript"
-    ]},
-    {
-        "id": 3,
-        "date": "4-2023",
-        "company": "Masters Agency",
-        "title": "Masters Agency Website",
-        "link": "https://www.mastersagency.au",
-        "technologies": [
-            "Webflow", "CSS", "JavaScript", "AWS"
-        ]
-    },
-    {
-        "id": 4,
-        "date": "11-2022",
-        "company": "Masters Agency",
-        "title": "C4i Solutions Website",
-        "link": "https://www.c4isolutions.com.au",
-        "technologies": [
-            "WordPress", "CSS", "JavaScript", "DNS Config"
-        ]
-    },
-    {
-        "id": 5,
-        "date": "2-2023",
-        "company": "Masters Agency",
-        "title": "DeGen Pass + Front End",
-        "link": "https://www.bondilines.com",
-        "technologies": [
-            "Webflow", "CSS", "JavaScript", "MailChimp", "Stripe API", "Klayvio"
-        ]
-    },
-    {
-        "id": 6,
-        "date": "7-2022",
-        "company": "Yora Settlements",
-        "title": "Buzz & Feed SPA",
-        "link": "https://yora.tech",
-        "technologies": [
-            "AWS", "SCSS", "TypeScript", "REST API"
-        ]
-    },
-    {
-        "id": 7,
-        "date": "12-2022",
-        "company": "Self",
-        "title": "NeoVim Dotfiles",
-        "link": "https://github.com/kaildrai/dotfiles",
-        "technologies": [
-            "NeoVim", "Vim", "CLI", "Linux", "LUA"
-        ]
-    },
-    {
-        "id": 8,
-        "date": "8-2023",
-        "company": "Masters Agency",
-        "title": "Right Start Pet Food Website",
-        "link": "https://rightstartpetfood.au",
-        "technologies": [
-            "Shopify", "Shopify SDK", "Liquid", "CSS", "JavaScript"
-        ]
-    },
-    {
-        "id": 9,
-        "date": "5-2023",
-        "company": "Masters Agency",
-        "title": "LOUMAC Website",
-        "link": "https://loumac.au",
-        "technologies": [
-            "Webflow", "CSS", "JavaScript"
-        ]
-    }
+  {
+    "id": 1,
+    "date": "3-2022",
+    "company": "Self",
+    "title": "Discord Bot",
+    "link": "https://www.github.com/kaildrai/discord-bot",
+    "technologies": ["Discord.js API", "TypeScript", "JavaScript", "OpenAI"]
+  },
+  {
+    "id": 2,
+    "date": "5-2023",
+    "company": "Self",
+    "title": "Portfolio Website",
+    "link": "http://www.github.com/kaildrai/portfolio/",
+    "technologies": ["React", "TailwindCSS", "TypeScript"]
+  },
+  {
+    "id": 3,
+    "date": "4-2023",
+    "company": "Masters Agency",
+    "title": "Masters Agency Website",
+    "link": "https://www.mastersagency.au",
+    "technologies": ["Webflow", "CSS", "JavaScript", "AWS"]
+  },
+  {
+    "id": 4,
+    "date": "11-2022",
+    "company": "Masters Agency",
+    "title": "C4i Solutions Website",
+    "link": "https://www.c4isolutions.com.au",
+    "technologies": ["WordPress", "CSS", "JavaScript", "DNS Config"]
+  },
+  {
+    "id": 5,
+    "date": "2-2023",
+    "company": "Masters Agency",
+    "title": "DeGen Pass + Front End",
+    "link": "https://www.bondilines.com",
+    "technologies": [
+      "Webflow",
+      "CSS",
+      "JavaScript",
+      "MailChimp",
+      "Stripe API",
+      "Klayvio"
+    ]
+  },
+  {
+    "id": 6,
+    "date": "7-2022",
+    "company": "Yora Settlements",
+    "title": "Buzz & Feed SPA",
+    "link": "https://yora.tech",
+    "technologies": ["AWS", "SCSS", "TypeScript", "REST API"]
+  },
+  {
+    "id": 7,
+    "date": "12-2022",
+    "company": "Self",
+    "title": "NeoVim Dotfiles",
+    "link": "https://github.com/kaildrai/dotfiles",
+    "technologies": ["NeoVim", "Vim", "CLI", "Linux", "LUA"]
+  },
+  {
+    "id": 8,
+    "date": "8-2023",
+    "company": "Masters Agency",
+    "title": "Right Start Pet Food Website",
+    "link": "https://rightstartpetfood.au",
+    "technologies": ["Shopify", "Shopify SDK", "Liquid", "CSS", "JavaScript"]
+  },
+  {
+    "id": 9,
+    "date": "5-2023",
+    "company": "Masters Agency",
+    "title": "LOUMAC Website",
+    "link": "https://loumac.au",
+    "technologies": ["Webflow", "CSS", "JavaScript"]
+  },
+  {
+    "id": 10,
+    "date": "12-2022",
+    "company": "Masters Agency",
+    "title": "Brisket Boys Website",
+    "link": "https://brisketboys.com.au",
+    "technologies": ["Shopify", "CSS", "JavaScript"]
+  }
 ]

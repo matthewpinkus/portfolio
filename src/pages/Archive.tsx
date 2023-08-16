@@ -7,7 +7,6 @@ export default function Archive() {
   document.title = "Matthew Pinkus | Archives";
 
   const [mousePos, setMousePos] = useState({ x: 0, y: 0 });
-
   useEffect(() => {
     const handleMouseMove = (event: any) => {
       setMousePos({ x: event.clientX, y: event.clientY });
@@ -21,7 +20,6 @@ export default function Archive() {
   }, []);
 
   const [sortedData, setSortedData] = useState([...Archive_JSON]);
-
   useEffect(() => {
     const sorted = [...sortedData].sort((a: any, b: any) => {
       a = a.date.split("-");
@@ -42,6 +40,7 @@ export default function Archive() {
         }}
         className={"max-md:hidden inset-0 -z-30 fixed transition duration-300"}
       />
+
       <div className="flex w-full flex-col md:flex-col">
         <div className="section relative md:pt-24 pt-6 text-paragraph_dark">
           <div className="inline-block [&>a>svg]:hover:-translate-x-4">
@@ -52,6 +51,7 @@ export default function Archive() {
               </span>
             </Link>
           </div>
+
           <h2 className="text-4xl font-bold mb-12 uppercase">All Projects</h2>
 
           <table className="table">
@@ -64,6 +64,7 @@ export default function Archive() {
                 <th className="hidden sm:block ">Link</th>
               </tr>
             </thead>
+
             <tbody>
               {sortedData.map((json) => {
                 return (

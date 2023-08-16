@@ -1,26 +1,16 @@
 [
-    {
-        
-        "id": 1,
-        "title": "Discord Bot",
-        "description": "An all purpose bot for my personal discord community",
-        "link": "https://github.com/kaildrai/discord-bot",
-        "technologies": [
-            "Discord.js API",
-            "TypeScript",
-            "JavaScript",
-            "OpenAI"
-        ]
-    },
-    {
-        "id": 2,
-        "title": "Portfolio Website",
-        "description": "This website to showcase my experience and further my knowledge of React",
-        "link": "https://github.com/kaildrai/portfolio",
-        "technologies": [
-            "React",
-            "TailwindCSS",
-            "TypeScript"
-    ]}
-        
+  {
+    "id": 1,
+    "title": "Portfolio Website",
+    "description": "This website to showcase my experience and further my knowledge of React",
+    "link": "https://github.com/kaildrai/portfolio",
+    "technologies": ["React", "TailwindCSS", "TypeScript"]
+  },
+  {
+    "id": 2,
+    "title": "Discord Bot",
+    "description": "An all purpose bot for my personal discord community",
+    "link": "https://github.com/kaildrai/discord-bot",
+    "technologies": ["Discord.js API", "TypeScript", "JavaScript", "OpenAI"]
+  }
 ]

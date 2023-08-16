@@ -1,33 +1,27 @@
 [
-    {
-        "id": 1,
-        "company": "Masters Agency",
-        "title": "Web Developer & IT Consultant",
-        "description": "In my time at Masters as the sole developer, I have developed and continue to maintain over a half dozen websites on Webflow and WordPress, used HTML/CSS/JS for custom designs and animations and liased with clients as a ",
-        "link": "https://mastersagency.au",
-        "technologies": [
-            "Webflow",
-            "WordPress",
-            "HTML",
-            "CSS",
-            "JavaScript",
-            "AWS",
-            "Zapier API",
-            "Stripe API"
-        ]
-    },
-    {
-        "id": 2,
-        "company": "Yora Settlements",
-        "title": "Full Stack Developer",
-        "description": "For multiple contracts, I created custom AWS OAuth authentication and routing for a single-page Svelte application, implemented a password recovery system, developed the landing page & crypto chart tables for yora.tech",
-        "link": "https://yora.tech",
-        "technologies": [
-            "HTML",
-            "SCSS",
-            "JavaScript",
-            "AWS",
-            "REST API"
-    ]}
-        
+  {
+    "id": 1,
+    "company": "Masters Agency",
+    "title": "Web Developer & IT Consultant",
+    "description": "In my time at Masters as the sole developer, I have developed and continue to maintain over a half dozen websites on Webflow and WordPress, used HTML/CSS/JS for custom designs and animations and liased with clients as a ",
+    "link": "https://mastersagency.au",
+    "technologies": [
+      "Webflow",
+      "WordPress",
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "AWS",
+      "Zapier API",
+      "Stripe API"
+    ]
+  },
+  {
+    "id": 2,
+    "company": "Yora Settlements",
+    "title": "Full Stack Developer",
+    "description": "For multiple contracts, I created custom AWS OAuth authentication and routing for a single-page Svelte application, implemented a password recovery system, developed the landing page & crypto chart tables for yora.tech",
+    "link": "https://yora.tech",
+    "technologies": ["HTML", "SCSS", "JavaScript", "AWS", "REST API"]
+  }
 ]

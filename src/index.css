@@ -93,7 +93,7 @@ code {
   /* Specifics */
   .technology-tag {
     @apply bg-subheading_dark_low
-          text-subheading_dark
+          text-subheading_dark_high
             inline-flex
             text-xs
             px-4
