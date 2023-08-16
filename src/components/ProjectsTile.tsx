@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import { ReactComponent as NewTab } from "../assets/newtab.svg";
 
 export default function ProjectsTile({
+  id,
   title,
   technology,
   description,
@@ -33,7 +34,7 @@ export default function ProjectsTile({
     }
   }, [isIntersecting]);
   return (
-    <div ref={tile} className="tile quart-in-out hover-border">
+    <div key={id} ref={tile} className="tile quart-in-out hover-border">
       <Link to={link} target="_blank" className="cursor-pointer">
         <NewTab
           id="new-tab-svg"

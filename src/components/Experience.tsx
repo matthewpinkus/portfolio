@@ -54,6 +54,7 @@ export default function Experience() {
         {Experience_JSON.map((json) => {
           return (
             <ExperienceTile
+              id={json.id}
               company={json.company}
               title={json.title}
               description={json.description}

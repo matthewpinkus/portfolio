@@ -42,6 +42,8 @@ export default function Projects() {
         {Projects_JSON.map((json) => {
           return (
             <ProjectsTile
+              id={json.id}
+              key={json.id}
               title={json.title}
               description={json.description}
               link={json.link}
