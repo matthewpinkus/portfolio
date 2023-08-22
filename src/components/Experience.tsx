@@ -3,8 +3,6 @@ import { Link } from "react-router-dom";
 import Experience_JSON from "../obj/Experience.json";
 import ExperienceTile from "./ExperienceTile";
 
-import resume from "../resume.pdf";
-
 import { ReactComponent as ARROW_SVG } from "../assets/arrow-right.svg";
 
 export default function Experience() {
@@ -69,7 +67,11 @@ export default function Experience() {
         })}
       </div>
       <div className="mt-4 ml-4 inline-block [&>a>svg]:hover:ml-4">
-        <a href={resume} className="inline-flex">
+        <a
+          href={process.env.PUBLIC_URL + "/resume.pdf"}
+          rel="noopener noreferrer"
+          className="inline-flex"
+        >
           <span className="flex align-center items-center uppercase font-bold link-hover">
             View Resume
           </span>

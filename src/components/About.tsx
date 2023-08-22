@@ -55,17 +55,21 @@ export default function About() {
           <p className="mb-2">
             Among taking on many spontaneous projects to find my field of
             expertise, including a
-            <a href="https://github.com/kaildrai/discord-bot" className="link">
+            <a
+              target="_blank"
+              href="https://github.com/kaildrai/discord-bot"
+              className="link"
+            >
               {" "}
               TypeScript Discord bot
             </a>
             , a
-            <a href="/" className="link">
+            <a target="_blank" href="/" className="link">
               {" "}
               Seinfield themed door-opener{" "}
             </a>
             to annoy my housemates (built on an Arduino) and a headless Debian
-            <a href="" className="link">
+            <a target="_blank" href="" className="link">
               {" "}
               NAS+ Raspberry Pi server
             </a>
@@ -73,7 +77,12 @@ export default function About() {
           </p>
           <p>
             Professionally, I build and maintain websites for our clients at
-            <a id="masters-link" href="www.mastersagency.au" className="link">
+            <a
+              id="masters-link"
+              target="_blank"
+              href="https://www.mastersagency.au"
+              className="link"
+            >
               {" "}
               Masters Agency
             </a>
