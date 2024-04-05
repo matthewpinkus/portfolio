@@ -85,5 +85,21 @@
     "title": "Brisket Boys Website",
     "link": "https://brisketboys.com.au",
     "technologies": ["Shopify", "CSS", "JavaScript"]
-  }
+  },
+  {
+    "id": 11,
+    "date": "10-2023",
+    "company": "Masters Agency",
+    "title": "Blaxland Glass",
+    "link": "https://blaxlandglass.com.au",
+    "technologies": ["Webflow", "DNS", "Figma", "CSS", "JavaScript"]
+  },
+  {
+     "id": 12,
+     "date": "10-2023",
+     "company": "Masters Agency",
+     "title": "Stimson Urban & Regional Planning",
+     "link": "https://stimson.com.au",
+     "technologies": ["Webflow", "DNS", "Figma", "CSS", "JavaScript"]
+  },
 ]

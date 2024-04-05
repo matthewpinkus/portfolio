@@ -68,8 +68,8 @@ export default function Experience() {
       </div>
       <div className="mt-4 ml-4 inline-block [&>a>svg]:hover:ml-4">
         <a
-          target="_blank"
-          href="/src/assets/resume.pdf"
+          href={process.env.PUBLIC_URL + "/resume.pdf"}
+          rel="noopener noreferrer"
           className="inline-flex"
         >
           <span className="flex align-center items-center uppercase font-bold link-hover">
