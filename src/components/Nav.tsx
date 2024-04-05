@@ -16,12 +16,12 @@ import NavItem from "./NavItem";
 
 export default function Nav() {
   return (
-    <div className="section md:pt-24 md:w-1/2 md:sticky md:top-0 md:left-0 md:flex z-10 md:justify-between md:flex-col md:h-full md:min-h-screen">
-      <div className="max-md:p-4">
+    <div className="section lg:pt-24 lg:w-1/2 lg:sticky lg:top-0 lg:left-0 lg:flex z-10 lg:justify-between lg:flex-col lg:h-full lg:min-h-screen">
+      <div className="max-lg:p-4">
         {/* Info wrapper */}
         <div className="flex flex-col">
           {/* Icon wrapper */}
-          <div className="max-md:hidden w-1/3 mb-6">
+          <div className="max-lg:hidden w-1/3 mb-6">
             <img src={logo} />
           </div>
           <div className="max-md:mt-8 ml-0 flex flex-col">
@@ -37,7 +37,7 @@ export default function Nav() {
         {/* Link wrapper */}
         <ul
           id="nav-link-wrapper"
-          className="max-md:hidden flex flex-col mt-12 space-y-2 relative text-paragraph_dark_low"
+          className="max-lg:hidden flex flex-col mt-12 space-y-2 relative text-paragraph_dark_low"
         >
           <li>
             <Link id="nav-about" to="#about" className="nav-link">
@@ -62,7 +62,7 @@ export default function Nav() {
       {/* Bottom wrapper for social icons? */}
       <div
         id="social-icons"
-        className="max-md:p-4 flex -ml-2 md:mt-24 md:mb-36 md:h-full"
+        className="max-lg:p-4 flex -ml-2 lg:mt-24 lg:mb-36 lg:h-full"
       >
         <Link
           className="relative hover:text-subheading_dark"

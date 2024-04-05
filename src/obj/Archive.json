@@ -4,7 +4,7 @@
     "date": "3-2022",
     "company": "Self",
     "title": "Discord Bot",
-    "link": "https://www.github.com/kaildrai/discord-bot",
+    "link": "https://www.github.com/matthewpinkus/discord-bot",
     "technologies": ["Discord.js API", "TypeScript", "JavaScript", "OpenAI"]
   },
   {
@@ -12,7 +12,7 @@
     "date": "5-2023",
     "company": "Self",
     "title": "Portfolio Website",
-    "link": "http://www.github.com/kaildrai/portfolio/",
+    "link": "http://www.github.com/matthewpinkus/portfolio/",
     "technologies": ["React", "TailwindCSS", "TypeScript"]
   },
   {
@@ -59,7 +59,7 @@
     "date": "12-2022",
     "company": "Self",
     "title": "NeoVim Dotfiles",
-    "link": "https://github.com/kaildrai/dotfiles",
+    "link": "https://github.com/matthewpinkus/dotfiles",
     "technologies": ["NeoVim", "Vim", "CLI", "Linux", "LUA"]
   },
   {

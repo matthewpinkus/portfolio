@@ -6,14 +6,9 @@ export default function About() {
   const anchor: any = useRef(null);
 
   useEffect(() => {
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        setIsIntersecting(entry.isIntersecting);
-      },
-      {
-        rootMargin: "-250px",
-      }
-    );
+    const observer = new IntersectionObserver(([entry]) => {
+      setIsIntersecting(entry.isIntersecting);
+    });
     observer.observe(anchor.current);
     return () => observer.disconnect();
   }, [isIntersecting]);
@@ -26,11 +21,16 @@ export default function About() {
       anchor?.classList.remove("text-paragraph_dark");
     }
   }, [isIntersecting]);
+
+  const showLightbox = () => {
+    return <video src="../assets/seinfield-arduino.mp4" />;
+  };
+
   return (
     <div
       ref={anchor}
       id="about"
-      className="section relative md:pt-24 pt-6 text-paragraph_dark_low"
+      className="section relative lg:pt-24 pt-6 text-paragraph_dark_low"
     >
       <div className="">
         <div className="mobile-sticky-heading">
@@ -40,8 +40,8 @@ export default function About() {
         </div>
         <div className="p-4">
           <p className="mb-2">
-            Back in '99, I built my first computer at age 4 with my dad watching
-            over me.
+            Back in '99, I built my first computer at age 4 (with my father
+            acting as overseer).
           </p>
 
           <p className="mb-2">
@@ -55,25 +55,33 @@ export default function About() {
           <p className="mb-2">
             Among taking on many spontaneous projects to find my field of
             expertise, including a
-            <a href="https://github.com/kaildrai/discord-bot" className="link">
+            <a
+              target="_blank"
+              href="https://github.com/matthewpinkus/discord-bot"
+              className="link"
+            >
               {" "}
               TypeScript Discord bot
             </a>
             , a
-            <a href="/" className="link">
+            <a onClick={showLightbox} className="link cursor-pointer">
               {" "}
               Seinfield themed door-opener{" "}
             </a>
             to annoy my housemates (built on an Arduino) and a headless Debian
-            <a href="" className="link">
+            <a target="_blank" href="" className="link">
               {" "}
               NAS+ Raspberry Pi server
             </a>
             , I have taken up the mantle of Web Developer.
           </p>
-          <p>
+          <p className="">
             Professionally, I build and maintain websites for our clients at
-            <a id="masters-link" href="www.mastersagency.au" className="link">
+            <a
+              target="_blank"
+              href="https://www.mastersagency.au"
+              className="link"
+            >
               {" "}
               Masters Agency
             </a>

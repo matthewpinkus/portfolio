@@ -10,14 +10,9 @@ export default function Projects() {
   const anchor: any = useRef(null);
 
   useEffect(() => {
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        setIsIntersecting(entry.isIntersecting);
-      },
-      {
-        rootMargin: "-250px",
-      }
-    );
+    const observer = new IntersectionObserver(([entry]) => {
+      setIsIntersecting(entry.isIntersecting);
+    });
     observer.observe(anchor.current);
     return () => observer.disconnect();
   }, [isIntersecting]);
