@@ -75,7 +75,7 @@ export default function Nav() {
         <Link
           className="relative"
           target="_blank"
-          to={"https://github.com/kaildrai"}
+          to={"https://github.com/matthewpinkus"}
         >
           <GITHUB_SVG className="social-icon" />
           <_GITHUB_SVG className="social-icon-full absolute top-0 opacity-0" />

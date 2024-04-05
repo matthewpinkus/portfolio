@@ -95,11 +95,11 @@
     "technologies": ["Webflow", "DNS", "Figma", "CSS", "JavaScript"]
   },
   {
-     "id": 12,
-     "date": "10-2023",
-     "company": "Masters Agency",
-     "title": "Stimson Urban & Regional Planning",
-     "link": "https://stimson.com.au",
-     "technologies": ["Webflow", "DNS", "Figma", "CSS", "JavaScript"]
-  },
+    "id": 12,
+    "date": "10-2023",
+    "company": "Masters Agency",
+    "title": "Stimson Urban & Regional Planning",
+    "link": "https://stimson.com.au",
+    "technologies": ["Webflow", "DNS", "Figma", "CSS", "JavaScript"]
+  }
 ]
