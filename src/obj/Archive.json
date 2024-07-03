@@ -101,5 +101,13 @@
     "title": "Stimson Urban & Regional Planning",
     "link": "https://stimson.com.au",
     "technologies": ["Webflow", "DNS", "Figma", "CSS", "JavaScript"]
+  },
+  {
+    "id": 13,
+    "date": "7-2024",
+    "company": "Masters Agency",
+    "title": "Kings Gate Capital Partners",
+    "link": "https://kingsgatecap.com/",
+    "technologies": ["Webflow", "CSS", "JavaScript"]
   }
 ]

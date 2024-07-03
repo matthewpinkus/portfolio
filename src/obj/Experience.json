@@ -1,9 +1,17 @@
 [
   {
     "id": 1,
+    "company": "Micway Transport",
+    "title": "ASP.NET & React Developer",
+    "description": "I was brought on to maintain and develop on a custom built Transport Management System for this company, using ASP.NET for server side logic and React TypeScript for front end rendering. ",
+    "link": "https://www.micway.com.au/",
+    "technologies": ["C#", "ASP.NET", "React", "TypeScript", "SQL Server"]
+  },
+  {
+    "id": 2,
     "company": "Masters Agency",
     "title": "Web Developer & IT Consultant",
-    "description": "In my time at Masters as the sole developer, I have developed and continue to maintain over a half dozen websites on Webflow and WordPress, used HTML/CSS/JS for custom designs and animations and liased with clients as a ",
+    "description": "In my time at Masters as the sole developer, I developed to maintained over a half dozen websites on Webflow and WordPress using HTML/CSS/JS for custom designs and animations.",
     "link": "https://mastersagency.au",
     "technologies": [
       "Webflow",
@@ -12,17 +20,15 @@
       "CSS",
       "JavaScript",
       "AWS",
-      "Zapier API",
-      "Stripe API",
-      "Shopify API",
+      "API Integration",
       "Webhooks"
     ]
   },
   {
-    "id": 2,
+    "id": 3,
     "company": "Yora Settlements",
     "title": "Full Stack Developer",
-    "description": "For multiple contracts, I created custom AWS OAuth authentication and routing for a single-page Svelte application, implemented a password recovery system, developed the landing page & crypto chart tables for yora.tech",
+    "description": "In a contractual basis, I created custom AWS OAuth authentication and routing for a single-page Svelte application, implemented a password recovery system, developed the landing page & crypto chart tables for yora.tech",
     "link": "https://yora.tech",
     "technologies": ["HTML", "SCSS", "JavaScript", "AWS", "REST API"]
   }
