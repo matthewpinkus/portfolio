@@ -44,7 +44,7 @@ export default function Archive() {
       <div className="flex w-full flex-col md:flex-col">
         <div className="section relative md:pt-24 pt-6 text-paragraph_dark">
           <div className="inline-block [&>a>svg]:hover:-translate-x-4">
-            <Link to="/portfolio" className="inline-flex">
+            <Link to="/" className="inline-flex">
               <ARROW_SVG className="rotate-180 w-8 p-2 duration-300 transition-all" />
               <span className="flex align-center items-center uppercase font-bold link-hover">
                 Matthew Pinkus
