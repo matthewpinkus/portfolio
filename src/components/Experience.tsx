@@ -1,5 +1,4 @@
 import { useEffect, useRef, useState } from "react";
-import { Link } from "react-router-dom";
 import Experience_JSON from "../obj/Experience.json";
 import ExperienceTile from "./ExperienceTile";
 
