@@ -69,17 +69,24 @@ export default function Archive() {
               {sortedData.map((json) => {
                 return (
                   <tr key={json.id} className="align-center [&>td]:p-2">
+                    {/* Year */}
                     <td>{json.date.split("-")[1]}</td>
+
+                    {/* Project (above tablet) */}
                     <td className="font-bold max-sm:hidden">{json.title}</td>
 
-                    <td className="font-bold sm:hidden link">
-                      <a href={json.link} target="_blank">
+                    {/* Project (below tablet) */}
+                    <td className="font-bold sm:hidden text-nowrap link">
+                      <a href={json.link} target="_blank" rel="noreferrer">
                         {json.title}
                       </a>
                     </td>
+
+                    {/* Made For */}
                     <td className="text-paragraph_dark_low text-sm max-md:hidden">
                       {json.company}
                     </td>
+
                     <td className="max-md:hidden">
                       {json.technologies.map((tech) => {
                         return (
@@ -87,9 +94,12 @@ export default function Archive() {
                         );
                       })}
                     </td>
+
+                    {/* Link */}
                     <td className="hidden sm:block">
                       <a
                         target="_blank"
+                        rel="noreferrer"
                         className="link font-normal text-paragraph_dark_low text-sm"
                         href={json.link}
                       >
