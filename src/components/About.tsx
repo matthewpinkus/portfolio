@@ -33,7 +33,7 @@ export default function About() {
     >
       <Fragment>
         <div className="mobile-sticky-heading">
-          <h2 className="text-2xl max-md:ml-8 md:text-3xl font-bold text-paragraph_dark uppercase">
+          <h2 className="text-2xl max-md:ml-8 md:text-3xl font-bold text-subheading_dark_high uppercase">
             About
           </h2>
         </div>

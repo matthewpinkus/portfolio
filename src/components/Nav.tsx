@@ -25,7 +25,7 @@ export default function Nav() {
             <img src={logo} />
           </div>
           <div className="max-md:mt-8 ml-0 flex flex-col">
-            <h1 className="block text-4xl text-subheading_dark font-bold">
+            <h1 className="block text-4xl text-subheading_dark_high font-bold">
               Matthew Pinkus
             </h1>
             <h2 className="block text-2xl text-heading_dark font-bold font-italic">
