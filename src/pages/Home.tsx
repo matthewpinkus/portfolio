@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useEffect, useState } from "react";
 import ScrollToHashElement from "../components/ScrollToHashElement";
 
 import Nav from "../components/Nav";
@@ -9,8 +9,8 @@ import Footer from "../components/Footer";
 
 export default function HomePage() {
   document.title = "Matthew Pinkus";
-  const [mousePos, setMousePos] = useState({ x: 0, y: 0 });
 
+  const [mousePos, setMousePos] = useState({ x: 0, y: 0 });
   useEffect(() => {
     const handleMouseMove = (event: any) => {
       setMousePos({ x: event.clientX, y: event.clientY });
@@ -23,7 +23,7 @@ export default function HomePage() {
     };
   }, []);
   return (
-    <div className="px-6 md:px-12 lg:px-24 lg:py-0 flex flex-col lg:flex-row min-h-screen max-w-screen-xl font-sans justify-center mx-auto">
+    <div className="px-6 md:px-12 lg:px-24 lg:py-0 flex flex-col lg:flex-row min-h-screen max-w-screen-[95dvw] font-sans justify-center mx-auto">
       <ScrollToHashElement />
       <div
         style={{
@@ -32,7 +32,7 @@ export default function HomePage() {
         className={"max-md:hidden inset-0 -z-30 fixed transition duration-300"}
       />
       <Nav />
-      <div className="flex lg:w-1/2 flex-col lg:flex-row">
+      <div className="flex lg:w-4/5 flex-col lg:flex-row">
         <div className="space-y-8 text-paragraph_dark">
           <About />
 
