@@ -1,11 +1,14 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useLayoutEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { ReactComponent as ARROW_SVG } from "../assets/arrow-right.svg";
 import Archive_JSON from "../obj/Archive.json";
 
 export default function Archive() {
   document.title = "Matthew Pinkus | Archives";
+  // React hooks is weird and doesn't scroll to top of the page when being <Link>ed to
+  useEffect(() => window.scrollTo(0, 0), []);
 
+  // Mouse BG effect
   const [mousePos, setMousePos] = useState({ x: 0, y: 0 });
   useEffect(() => {
     const handleMouseMove = (event: any) => {
@@ -19,6 +22,7 @@ export default function Archive() {
     };
   }, []);
 
+  // Sort table by date
   const [sortedData, setSortedData] = useState([...Archive_JSON]);
   useEffect(() => {
     const sorted = [...sortedData].sort((a: any, b: any) => {
@@ -72,18 +76,15 @@ export default function Archive() {
                     {/* Year */}
                     <td>{json.date.split("-")[1]}</td>
 
-                    {/* Project (above tablet) */}
-                    <td className="font-bold max-sm:hidden">{json.title}</td>
-
-                    {/* Project (below tablet) */}
-                    <td className="font-bold sm:hidden text-nowrap link">
+                    {/* Project */}
+                    <td className="font-bold max-sm:text-nowrap link">
                       <a href={json.link} target="_blank" rel="noreferrer">
                         {json.title}
                       </a>
                     </td>
 
                     {/* Made For */}
-                    <td className="text-paragraph_dark_low text-sm max-md:hidden">
+                    <td width={125} className="text-paragraph_dark_low text-sm max-md:hidden">
                       {json.company}
                     </td>
 
