@@ -86,7 +86,7 @@ export default function About() {
           </p>
           
           <p>
-            In my free time I like to play couch co-op games with my girlfriend, annoy our cat and read epic fantasy series. <a className="link">(Huge Brandon Sanderson nerd!)</a>
+            In my free time I like to play couch co-op games with my girlfriend, annoy our cat and read epic fantasy series. <span id="dustbringer" className="link">(Huge Brandon Sanderson nerd!)</span>
           </p>
         </div>
       </Fragment>

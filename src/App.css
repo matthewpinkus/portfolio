@@ -14,3 +14,8 @@
 #masters-link:hover {
   cursor: url("/src/assets/masters-logo.svg") 32 32, auto !important;
 }
+
+#dustbringer:hover {
+  cursor: url("https://uploads.coppermind.net/Dustbringers_glyph.svg") 32 32,
+    auto !important;
+}
