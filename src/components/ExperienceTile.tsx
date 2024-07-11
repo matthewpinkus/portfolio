@@ -6,6 +6,7 @@ import { ReactComponent as NewTab } from "../assets/newtab.svg";
 export default function ExperienceTile({
   id,
   title,
+  date,
   company,
   description,
   link,
@@ -41,6 +42,7 @@ export default function ExperienceTile({
           id="new-tab-svg"
           className="nav-icon text-heading_dark hidden absolute top-2' right-2 w-8 h-8"
         />
+        <span className="text-secondary_dark font-normal text-sm uppercase">{date}</span>
         <h2 className="h2">{company}</h2>
         <h3 className="h3 italic">{title}</h3>
         <p className="mb-8">{description}</p>

@@ -54,6 +54,7 @@ export default function Experience() {
           return (
             <ExperienceTile
               id={json.id}
+              date={json.date}
               company={json.company}
               title={json.title}
               description={json.description}

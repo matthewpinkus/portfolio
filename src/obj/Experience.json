@@ -2,6 +2,7 @@
   {
     "id": 1,
     "company": "Micway Transport",
+    "date": "2024 — Present",
     "title": "ASP.NET & React Developer",
     "description": "I was brought on to maintain and develop on a custom built Transport Management System for this company, using ASP.NET for server side logic and React TypeScript for front end rendering. ",
     "link": "https://www.micway.com.au/",
@@ -10,6 +11,7 @@
   {
     "id": 2,
     "company": "Masters Agency",
+    "date": "2022 — 2024",
     "title": "Web Developer & IT Consultant",
     "description": "In my time at Masters as the sole developer, I developed to maintained over a half dozen websites on Webflow and WordPress using HTML/CSS/JS for custom designs and animations.",
     "link": "https://mastersagency.au",
@@ -27,6 +29,7 @@
   {
     "id": 3,
     "company": "Yora Settlements",
+    "date": "2021 — 2022",
     "title": "Full Stack Developer",
     "description": "In a contractual basis, I created custom AWS OAuth authentication and routing for a single-page Svelte application, implemented a password recovery system, developed the landing page & crypto chart tables for yora.tech",
     "link": "https://yora.tech",
