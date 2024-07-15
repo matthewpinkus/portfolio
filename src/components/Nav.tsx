@@ -60,7 +60,7 @@ export default function Nav() {
           </li>
 
           <li>
-            <Link id="nav-projects" to="#contact" className="nav-link">
+            <Link id="nav-contact" to="#contact" className="nav-link">
               <NavItem title="Contact" SVG={CiMail} />
             </Link>
           </li>
