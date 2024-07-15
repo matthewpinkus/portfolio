@@ -2,15 +2,17 @@ import React from "react";
 import logo from "../assets/matthew-icon.png";
 import { Link } from "react-router-dom";
 
-import { ReactComponent as BRACKETS_SVG } from "../assets/brackets.svg";
-import { ReactComponent as TERMINAL_SVG } from "../assets/terminal.svg";
-import { ReactComponent as LAPTOP_SVG } from "../assets/laptop.svg";
 import { ReactComponent as GITHUB_SVG } from "../assets/github.svg";
 import { ReactComponent as _GITHUB_SVG } from "../assets/github-full.svg";
 import { ReactComponent as CODESYMBOL_SVG } from "../assets/code-symbol.svg";
 import { ReactComponent as _CODESYMBOL_SVG } from "../assets/code-symbol-full.svg";
 import { ReactComponent as LINKEDIN_SVG } from "../assets/linkedin.svg";
 import { ReactComponent as _LINKEDIN_SVG } from "../assets/linkedin-full.svg";
+
+import { LuTerminal } from "react-icons/lu";
+import { PiBracketsCurly } from "react-icons/pi";
+import { CiLaptop } from "react-icons/ci";
+import { HiOutlineMail } from "react-icons/hi";
 
 import NavItem from "./NavItem";
 
@@ -22,7 +24,7 @@ export default function Nav() {
         <div className="flex flex-col">
           {/* Icon wrapper */}
           <div className="max-lg:hidden w-1/3 mb-6">
-            <img src={logo} />
+            <img src={logo} alt="Portfolio programmer icon" />
           </div>
           <div className="max-md:mt-8 ml-0 flex flex-col">
             <h1 className="block text-4xl text-subheading_dark_high font-bold">
@@ -41,19 +43,25 @@ export default function Nav() {
         >
           <li>
             <Link id="nav-about" to="#about" className="nav-link">
-              <NavItem title="About" SVG={TERMINAL_SVG} />
+              <NavItem title="About" SVG={LuTerminal} />
             </Link>
           </li>
 
           <li>
             <Link id="nav-experience" to="#experience" className="nav-link">
-              <NavItem title="Experience" SVG={BRACKETS_SVG} />
+              <NavItem title="Experience" SVG={PiBracketsCurly} />
             </Link>
           </li>
 
           <li>
             <Link id="nav-projects" to="#projects" className="nav-link">
-              <NavItem title="Projects" SVG={LAPTOP_SVG} />
+              <NavItem title="Projects" SVG={CiLaptop} />
+            </Link>
+          </li>
+
+          <li>
+            <Link id="nav-projects" to="#contact" className="nav-link">
+              <NavItem title="Contact" SVG={HiOutlineMail} />
             </Link>
           </li>
         </ul>
