@@ -29,8 +29,14 @@ const [isIntersecting, setIsIntersecting] = useState(false);
             </h2>
         </div>
         <div className="p-4">
-            <p className="mb-2">
-                If you would like to contact me, please send me an email at hello [at] mpinkus [dot] com
+            <p className="mb-2 flex flex-col">
+                If you would like to contact me for contract work involving Webflow or Front-end React development, please send me an email at:
+                <span className="mt-2 ">
+                    {" "} hello<span className="text-subheading_dark_high font-bold">[at]</span>mpinkus<span className="text-subheading_dark_high font-bold">[dot]</span>com
+                </span>
+                <span className="mt-4 font text-secondary_dark font-light text-sm">
+                    (not a hyperlink to prevent spam)
+                </span>
             </p>
         </div>
     </div>
