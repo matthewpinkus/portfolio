@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import ScrollToHashElement from "../components/ScrollToHashElement";
 
 import Nav from "../components/Nav";
@@ -23,6 +23,17 @@ export default function HomePage() {
       window.removeEventListener("mousemove", handleMouseMove);
     };
   }, []);
+
+  const [activeSection, setActiveSection] = useState("about");
+  const refs = {
+    about: useRef(document.getElementById("about")),
+    experience: useRef(document.getElementById("experience")),
+    projects: useRef(document.getElementById("projects")),
+    contact: useRef(document.getElementById("contact")),
+  };
+  
+
+
   return (
     <div className="px-6 md:px-12 lg:px-24 lg:py-0 flex flex-col lg:flex-row min-h-screen max-w-screen-[95dvw] font-sans justify-center mx-auto">
       <ScrollToHashElement />
