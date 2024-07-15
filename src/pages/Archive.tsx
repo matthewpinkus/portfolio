@@ -1,5 +1,5 @@
-import React, { useEffect, useLayoutEffect, useState } from "react";
-import { Link } from "react-router-dom";
+import React, { useEffect, useState } from "react";
+import { Link, useParams } from "react-router-dom";
 import { ReactComponent as ARROW_SVG } from "../assets/arrow-right.svg";
 import Archive_JSON from "../obj/Archive.json";
 
@@ -7,6 +7,10 @@ export default function Archive() {
   document.title = "Matthew Pinkus | Archives";
   // React hooks is weird and doesn't scroll to top of the page when being <Link>ed to
   useEffect(() => window.scrollTo(0, 0), []);
+
+  // URL prop
+  const { id } = useParams();
+  console.log(id);
 
   // Mouse BG effect
   const [mousePos, setMousePos] = useState({ x: 0, y: 0 });
@@ -111,7 +115,9 @@ export default function Archive() {
                     </td>
                   </tr>
                 );
-              })}
+              })
+              .filter((data) => id === 'webflow' ? data.props.children[3].props.children[0].props.children === 'Webflow' : data)
+              }
             </tbody>
           </table>
         </div>

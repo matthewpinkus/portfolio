@@ -31,7 +31,7 @@ const [isIntersecting, setIsIntersecting] = useState(false);
         <div className="p-4">
             <p className="mb-2 flex flex-col">
                 <span>
-                    If you would like to contact me for contract work involving <a className="link text-nowrap" href="/archives">Webflow</a> or Front-end React development, please send me an email at:
+                    If you would like to contact me for contract work involving <a className="link text-nowrap" href="/archives/webflow">Webflow</a> or Front-end React development, please send me an email at:
                 </span>
                 <span className="mt-2 ">
                     {" "} hello<span className="text-subheading_dark_high font-bold">[at]</span>mpinkus<span className="text-subheading_dark_high font-bold">[dot]</span>com

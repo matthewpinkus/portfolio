@@ -11,6 +11,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="archives" element={<Archive />} />
+        <Route path="archives/:id" element={<Archive />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </BrowserRouter>
