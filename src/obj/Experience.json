@@ -4,7 +4,7 @@
     "company": "Micway Transport",
     "date": "2024 — Present",
     "title": "ASP.NET & React Developer",
-    "description": "I was brought on to maintain and develop on a custom built Transport Management System for this company, using ASP.NET for server side logic and React TypeScript for front end rendering. ",
+    "description": "I maintain and develop on a custom built components for a Transport Management System for this company, using ASP.NET for server side API logic and React TypeScript for front end rendering. ",
     "link": "https://www.micway.com.au/",
     "technologies": ["C#", "ASP.NET", "React", "TypeScript", "SQL Server"]
   },
