@@ -18,7 +18,7 @@ import NavItem from "./NavItem";
 
 export default function Nav() {
   return (
-    <div className="section lg:pt-24 lg:w-1/2 lg:sticky lg:top-0 lg:left-0 lg:flex z-10 lg:justify-between lg:flex-col lg:h-full lg:min-h-screen">
+    <div className="section lg:pt-12 lg:w-1/2 lg:sticky lg:top-0 lg:left-0 lg:flex z-10 lg:justify-between lg:flex-col lg:h-full lg:min-h-screen">
       <div className="max-lg:p-4">
         {/* Info wrapper */}
         <div className="flex flex-col">
@@ -39,7 +39,7 @@ export default function Nav() {
         {/* Link wrapper */}
         <ul
           id="nav-link-wrapper"
-          className="max-lg:hidden flex flex-col mt-12 space-y-2 relative text-paragraph_dark_low"
+          className="max-lg:hidden flex flex-col mt-6 space-y-1 relative text-paragraph_dark_low"
         >
           <li>
             <Link id="nav-about" to="#about" className="nav-link">
@@ -70,7 +70,7 @@ export default function Nav() {
       {/* Bottom wrapper for social icons? */}
       <div
         id="social-icons"
-        className="max-lg:p-4 flex -ml-2 lg:mt-24 lg:mb-36 lg:h-full"
+        className="max-lg:p-4 flex -ml-2 lg:mt-12 lg:mb-36 lg:h-full"
       >
         <Link
           className="relative hover:text-subheading_dark"
