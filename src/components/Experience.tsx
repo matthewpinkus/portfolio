@@ -75,7 +75,7 @@ export default function Experience() {
           <span className="flex align-center items-center uppercase font-bold link-hover">
             View Resume
           </span>
-          <ARROW_SVG className="w-8 p-2 duration-300 transition-all hover:translate-x-4" />
+          <ARROW_SVG className="w-8 p-2 duration-300 transition-all" />
         </a>
       </div>
     </div>
