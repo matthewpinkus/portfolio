@@ -9,10 +9,10 @@ import { ReactComponent as _CODESYMBOL_SVG } from "../assets/code-symbol-full.sv
 import { ReactComponent as LINKEDIN_SVG } from "../assets/linkedin.svg";
 import { ReactComponent as _LINKEDIN_SVG } from "../assets/linkedin-full.svg";
 
-import { LuTerminal } from "react-icons/lu";
+import { PiTerminalThin } from "react-icons/pi";
 import { PiBracketsCurly } from "react-icons/pi";
 import { CiLaptop } from "react-icons/ci";
-import { HiOutlineMail } from "react-icons/hi";
+import { CiMail } from "react-icons/ci";
 
 import NavItem from "./NavItem";
 
@@ -43,7 +43,7 @@ export default function Nav() {
         >
           <li>
             <Link id="nav-about" to="#about" className="nav-link">
-              <NavItem title="About" SVG={LuTerminal} />
+              <NavItem title="About" SVG={PiTerminalThin} />
             </Link>
           </li>
 
@@ -61,7 +61,7 @@ export default function Nav() {
 
           <li>
             <Link id="nav-projects" to="#contact" className="nav-link">
-              <NavItem title="Contact" SVG={HiOutlineMail} />
+              <NavItem title="Contact" SVG={CiMail} />
             </Link>
           </li>
         </ul>
