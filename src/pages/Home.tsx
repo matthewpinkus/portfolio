@@ -6,6 +6,7 @@ import About from "../components/About";
 import Experience from "../components/Experience";
 import Projects from "../components/Projects";
 import Footer from "../components/Footer";
+import Contact from "../components/Contact";
 
 export default function HomePage() {
   document.title = "Matthew Pinkus";
@@ -43,6 +44,10 @@ export default function HomePage() {
           <div className="divider" />
 
           <Projects />
+
+          <div className="divider" />
+
+          <Contact />
 
           <div className="divider" />
 
