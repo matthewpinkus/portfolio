@@ -70,6 +70,7 @@ export default function Experience() {
         <a
           href={process.env.PUBLIC_URL + "/resume.pdf"}
           rel="noopener noreferrer"
+          target="_blank"
           className="inline-flex"
         >
           <span className="flex align-center items-center uppercase font-bold link-hover">
